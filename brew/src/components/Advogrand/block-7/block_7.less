@@ -1,0 +1,63 @@
+.Advogrand-b7 {
+  height: 470px;
+  width: 100%;
+  background-size: cover;
+
+  &_content {
+    height: 470px;
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    &--left {
+      color: white;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      &_title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      &_list {
+        width: 500px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--item {
+          display: flex;
+          //justify-content: space-between;
+
+          &_digit {
+            font-size: 18px;
+            font-weight: 500;
+            color: #e41e1e;
+          }
+          &_text {
+            font-size: 18px;
+            font-weight: 300;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    &--right {
+      height: 175px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &_item {
+        height: 72px;
+        width: 209px;
+        background-size: cover;
+        cursor: pointer;
+      }
+    }
+  }
+}

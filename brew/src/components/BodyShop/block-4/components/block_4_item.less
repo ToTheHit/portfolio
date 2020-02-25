@@ -1,0 +1,20 @@
+.bodyShop-b4_item {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--picture {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    width: 140px;
+    -webkit-filter: grayscale(100%);
+    transition-duration: 0.2s;
+    
+    &:hover {
+      -webkit-filter: grayscale(0%);
+    }
+  }
+}

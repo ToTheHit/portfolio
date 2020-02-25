@@ -1,0 +1,104 @@
+.Belaz-b3 {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+
+    &--title {
+      font-size: 30px;
+      font-weight: 900;
+      width: 440px;
+      text-align: right;
+    }
+
+    &--form {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+
+      &_box {
+        width: 370px;
+        height: 70px;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-icon {
+          height: 20px;
+          width: 27px;
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+
+        &-input {
+          border: none;
+          font-family: "ProximaNove", sans-serif;
+          padding-left: 30px;
+          padding-right: 30px;
+          height: calc(100% - 6px);
+          width: calc(100% - 30px);
+          background-color: #f2f2f2;
+
+
+          &::placeholder {
+            font-size: 13px;
+            color: #818181;
+            text-transform: uppercase;
+          }
+        }
+
+        &:first-child {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    &--getPrice {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+
+      &_description {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+
+        &-text {
+          text-align: right;
+          margin-right: 30px;
+        }
+
+        &-clock {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &_button {
+        height: 80px;
+        width: 370px;
+        background-color: #1866af;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
