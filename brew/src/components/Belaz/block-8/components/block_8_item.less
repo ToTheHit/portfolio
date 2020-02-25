@@ -1,0 +1,72 @@
+
+
+.Belaz-b8-item {
+  position: relative;
+
+  &_title {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+    }
+    &.active {
+      color: #579eff;
+      text-decoration: none;
+    }
+  }
+
+  &_description {
+    display: flex;
+    transition: visibility 0.2s, opacity 0.2s linear;
+    color: black;
+    position: absolute;
+    max-width: 330px;
+    min-width: 300px;
+    //height: 147px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
+    background-color: #ffffff;
+    cursor: default;
+    left: 0;
+    top: 35px;
+    justify-content: space-between;
+    z-index: 2;
+
+    &-text {
+      font-size: 14px;
+      font-weight: normal;
+      padding: 15px;
+
+      &:hover {
+      }
+    }
+    &-close {
+      padding-right: 15px;
+      padding-top: 15px;
+
+      &_icon {
+        height: 20px;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #15151e;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid white;
+      position: absolute;
+      top: -10px;
+    }
+  }
+}

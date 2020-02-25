@@ -1,0 +1,101 @@
+.Advogrand-b8 {
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f5f5f5;
+
+  &_title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &_category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &--item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: #e50000;
+      }
+      &_active {
+        padding: 8px;
+        border-radius: 5px;
+        border: solid 2px #e42626;
+        color: #e42626;
+      }
+    }
+
+  }
+
+  &_videoRaw {
+    width: 940px;
+    //height: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .slick-dots{
+      position: initial;
+      li button:before {
+        font-size: 20px;
+      }
+    }
+
+    .slick-prev {
+      top: 35%;
+      -webkit-transform: none;
+      transform: none;
+      left: -95px;
+
+      &::before {
+        color: #cccccc;
+        font-size: 50px;
+        content: '\FFE9';
+      }
+      &:hover {
+        &:before {
+          color: #e42626;
+        }
+      }
+    }
+
+    .slick-next {
+      top: 35%;
+      right: -70px;
+      -webkit-transform: none;
+      transform: none;
+
+      &::before {
+        color: #cccccc;
+        font-size: 50px;
+        content: '\ffeb';
+      }
+      &:hover {
+        &:before {
+          color: #e42626;
+        }
+      }
+    }
+
+    .slick-list {
+      height: 260px;
+    }
+
+  }
+}
+
+
+//.Advogrand-b8_videoRaw

@@ -15,19 +15,19 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
+                test: /\.(png|jpg|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name].[ext]',
+                            name: '[hash].[ext]',
                             outputPath: 'assets/images/'
                         }
                     }
                 ]
             },
             {
-                test: /\.(ttf|otf|eot|svg|woff)$/,
+                test: /\.(ttf|otf|eot|woff)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -37,6 +37,10 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(svg)(\?[a-z0-9=&.]+)?$/,
+                loader: 'svg-inline-loader'
             }
         ]
     }
