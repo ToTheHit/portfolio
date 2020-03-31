@@ -59,7 +59,7 @@ const Block_7 = (props) => {
     }, [itemObject.length]);
 
     return (
-        <div className={'Belaz-b7'}>
+        <section className={'Belaz-b7'}>
             <div className="Belaz-b7__content">
                 <div className="Belaz-b7__content--title">
                     У нас разработаны бонусные системы<br/>
@@ -69,7 +69,7 @@ const Block_7 = (props) => {
                     {items}
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

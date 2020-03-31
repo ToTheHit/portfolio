@@ -3,9 +3,10 @@ const path = require('path');
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        // publicPath: '/',
+        path: path.resolve(__dirname, 'dist') + '/bundle/',
+        publicPath: '/',
         filename: '[name].bundle.js',
+        chunkFilename: '[name].bundle.js',
     },
     module: {
         rules: [
@@ -27,7 +28,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(ttf|otf|eot|woff)$/,
+                test: /\.(ttf|otf|eot|woff|woff2)$/,
                 use: [
                     {
                         loader: 'file-loader',

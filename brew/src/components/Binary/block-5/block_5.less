@@ -1,0 +1,236 @@
+@import "../../../Pages/Main/app.less";
+
+.Binary-b5 {
+  //height: 820px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  .Binary-textBlock {
+    margin: 100px 0;
+
+    &__title {
+      color: black;
+    }
+    &__line {
+      background-color: black;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: black;
+    margin-bottom: 100px;
+  }
+  &__form {
+    &--title {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.84px;
+    }
+    &-line {
+      display: flex;
+      width: 380px;
+      justify-content: space-between;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+    }
+    &-message {
+      margin-top: 60px;
+    }
+
+    &-box {
+      margin-top: 15px;
+      width: 161px;
+      height: 35px;
+      background-color: #f8f7f7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      &--input {
+        border: none;
+        font-family: "Lato", sans-serif;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: calc(100% - 6px);
+        width: calc(100% - 20px);
+        background-color: #f8f7f7;
+        &:focus {
+          outline: black auto 1px;
+        }
+      }
+      &::placeholder {
+        font-size: 13px;
+        color: #818181;
+        text-transform: uppercase;
+      }
+
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 159px;
+        border: 1px solid black;
+        background-color: black;
+      }
+    }
+
+    &-messageBox {
+      margin-top: 15px;
+      max-width: 383px;
+      width: 100%;
+      height: 118px;
+      background-color: #f8f7f7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      &--input {
+        border: none;
+        font-family: "Lato", sans-serif;
+        padding: 10px;
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        background-color: #f8f7f7;
+        resize: none;
+
+        &:focus {
+          outline: black auto 1px;
+        }
+      }
+      &::placeholder {
+        font-size: 13px;
+        color: #818181;
+        text-transform: uppercase;
+      }
+
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% - 2px);
+        border: 1px solid black;
+        background-color: black;
+      }
+    }
+
+    &-send {
+      margin-top: 40px;
+      text-transform: uppercase;
+      padding: 10px;
+      margin-right: -10px;
+      background-color: transparent;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.84px;
+      float: right;
+      &:focus {
+        outline: black auto 1px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__contact {
+    margin-left: 80px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.86;
+    text-align: left;
+    color: #000000;
+    &-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.86;
+      text-align: left;
+      color: #000000;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      &:first-line {
+        line-height: 1;
+      }
+    }
+    &-signature {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    &__line {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    &-icon {
+      width: 29px;
+      height: 29px;
+      border: solid 2px #1e1e1e;
+      font-weight: bold;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 20px;
+      line-height: 28px;
+      &:hover {
+        cursor: pointer;
+      }
+      &:last-child {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .Binary-textBlock {
+      margin: 30px 0;
+    }
+    &__form-line {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 380px;
+    }
+    &__form-item:first-child {
+      margin-bottom: 20px;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      &-send {
+        margin-top: 20px;
+      }
+    }
+    &__form-message {
+      margin-top: 20px;
+      width: 90%;
+    }
+    &__form-messageBox {
+      width: 100%;
+    }
+
+  }
+  @media (max-width: 425px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    &__contact {
+      margin: 20px 0 30px 0;
+    }
+  }
+}

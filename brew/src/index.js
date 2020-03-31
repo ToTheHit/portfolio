@@ -2,11 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './Pages/Main/App.css'; // This is IMPORTANT import.
+import smoothscroll from 'smoothscroll-polyfill';
+
+
 import * as serviceWorker from './serviceWorker';
 import connect from '@vkontakte/vkui-connect';
 import AppRouter from "./Router";
 
 connect.send('VKWebAppInit', {});
+
+// Added snooth scroll for Safari 6+, IE 9+, Edge 12+, Opera Next
+smoothscroll.polyfill();
 
 ReactDOM.render(<AppRouter />, document.getElementById('root'));
 

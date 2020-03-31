@@ -6,7 +6,6 @@ import pic1 from '../../../assets/Advogrand/block-8/b8-1.png'
 import pic2 from '../../../assets/Advogrand/block-8/b8-2.png'
 import pic3 from '../../../assets/Advogrand/block-8/b8-3.png'
 import pic4 from '../../../assets/Advogrand/block-8/b8-4.png'
-import Block_3_item from "../block-3/components/Block_3_item";
 
 class Block_9 extends Component {
     constructor(props) {
@@ -52,12 +51,12 @@ class Block_9 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b9'} ref={this.getSectionRef}>
+            <section className={'Advogrand-b9'} ref={this.getSectionRef}>
                 <div className="Advogrand-b9_title">Партнеры Advogrand</div>
                 <div className="Advogrand-b9_slider">
                     {this.state.renderedPartners}
                 </div>
-            </div>
+            </section>
         )
     }
 }

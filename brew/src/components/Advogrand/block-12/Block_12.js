@@ -20,11 +20,11 @@ class Block_12 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b12'} ref={this.getSectionRef}>
+            <footer className={'Advogrand-b12'} ref={this.getSectionRef}>
                 <div className="Advogrand-b12_content">
                     <div className="Advogrand-b12_content--logo" style={{backgroundImage: "url(" + logo + ")"}}/>
                 </div>
-            </div>
+            </footer>
         )
     }
 }

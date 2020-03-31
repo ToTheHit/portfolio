@@ -1,12 +1,23 @@
 import React, {Component} from 'react';
 import Layout from "../../components/InstantBrew/Layout/Layout";
 import Switch from "../../components/InstantBrew/Switch/Switch";
+import classNames from '../../lib/classNames';
 
 import './app.less';
+import './main.less'
 import Card from "../../components/MainPage/Card/Card";
 
-class App extends Component {
+import bg_granit from '../../assets/Main/granit.jpg';
+import bg_bodyshop from '../../assets/Main/bodyshop.jpg';
+import bg_models from '../../assets/Main/3dmodel.jpg';
+import bg_advogrand from '../../assets/Main/advogrand.jpg';
+import bg_amelia from '../../assets/Main/amelia.jpg';
+import bg_belaz from '../../assets/Main/belaz.jpg';
+import bg_bicycle from '../../assets/Main/bicycle.jpg';
+import bg_binary from '../../assets/Main/binary.jpg';
+import bg_friendsfamily from '../../assets/Main/friendsfamily.jpg';
 
+class App extends Component {
     constructor(props) {
         super(props);
 
@@ -14,65 +25,79 @@ class App extends Component {
             darkTheme: false,
             cardsObj: [
                 {
-                    pictureURL: 'https://www.meistertask.com/embed/at/14342703/large/a966ea0824abdf469c86dfd6aa4e82a68cbc0a23.png',
+                    pictureURL: bg_granit,
                     title: 'Гранит',
                     description: 'Быстрая доставка бетона, щебня, песка и других нерудных материалов по Москве и Московской области',
                     link: '/granit'
                 },
                 {
-                    pictureURL: 'https://www.meistertask.com/embed/at/16234706/large/9708fad4240e82aca4bf6d85363d4578ffb34b84.png',
+                    pictureURL: bg_bodyshop,
                     title: "Кузовной ремонт",
                     description: "Продажа кузовных запчастей с заводской покраской без пробега по РФ",
                     link: '/bodyshop'
                 },
                 {
-                    pictureURL: 'https://www.meistertask.com/embed/at/14342683/large/085154eb14292d626bbd39dcfe3bf1add83caf13.png',
+                    pictureURL: bg_advogrand,
                     title: 'Advogrand',
                     description: '24 часа в сутки Ваш личный юрист - Advogrand на связи',
                     link: '/advogrand'
                 },
                 {
-                    pictureURL: 'https://www.meistertask.com/embed/at/14342735/large/16459ad4d919ba4c167a0ec9dd9d0461e925a12a.png',
+                    pictureURL: bg_belaz,
                     title: 'Белазы',
                     description: 'Оригинальные запчасти для Белаз с бесплатной доставкой в Ваш город!',
                     link: '/belaz'
                 },
                 {
-                    pictureURL: 'https://www.meistertask.com/embed/at/14342802/large/8e3fa0fa2eb205354a8e0d911846f2e816dc2380.png',
-                    title: 'FriendsFamily',
-                    description: 'Ателье одинаковой одежды для мам и дочек\nИндивидуальный пошив',
-                    link: '/friendsfamily'
+                    pictureURL: bg_bicycle,
+                    title: 'Bicycle',
+                    description: 'A new generation of vintage bike',
+                    link: '/bicycle'
                 },
                 {
-                    pictureURL: 'https://www.meistertask.com/embed/at/14342733/large/6cb792456bd255298fa3e8ea490a0bb4914064af.png',
+                    pictureURL: bg_binary,
+                    title: 'Binary',
+                    description: 'Clear, smart, attractive design',
+                    link: '/binary'
+                },
+                {
+                    pictureURL: bg_models,
                     title: '3D моделирование',
                     description: 'С нашей помощью Вы можете спроектировать и увидеть как будет выглядеть Ваш дом',
                     link: '/3dmodeling'
                 },
                 {
-                    pictureURL: 'https://www.meistertask.com/embed/at/14342746/large/dbc9b859e91c8dc0db77ca8b90737f1f0fe87522.png',
-                    title: 'Амелия',
-                    description: '---------',
-                    link: '/amelia'
+                    pictureURL: bg_friendsfamily,
+                    title: 'FriendsFamily',
+                    description: 'Ателье одинаковой одежды для мам и дочек\nИндивидуальный пошив',
+                    link: '/friendsfamily'
                 },
-                {
-                    pictureURL: 'https://www.meistertask.com/embed/at/14342762/large/4926cd033bb088f51b0b8b1cffca3626b64386aa.png',
-                    title: 'Баскетбол',
-                    description: 'Прямые эфиры.Эксперсс прогнозы и ставки',
-                    link: '/basketball'
-                }
+/*                {
+                    pictureURL: bg_amelia,
+                    title: 'Амелия',
+                    description: '',
+                    link: '/amelia'
+                }*/
             ],
-            cards: []
-
+            cards: [],
+            hide: true
         };
 
         this.changeTheme = this.changeTheme.bind(this);
+        this.changeHide = this.changeHide.bind(this);
     }
+
 
     changeTheme() {
         this.setState(prevState => ({
             darkTheme: !prevState.darkTheme
         }))
+    }
+    changeHide(state) {
+        setTimeout(() => {
+            this.setState({hide: state})
+
+        }, 100)
     }
 
     componentDidMount() {
@@ -84,17 +109,20 @@ class App extends Component {
                     title={card.title}
                     description={card.description}
                     link={card.link}
+                    changeHide={(state) => this.changeHide(state)}
                 />
             )
         });
         this.setState({cards: cards});
+        this.changeHide(false)
     }
 
     render() {
         return (
-            <div className="App">
+            <div className={classNames("App", {['hidden']: this.state.hide})} >
                 <Layout theme={this.state.darkTheme ? "dark" : 'light'} className={'welcome-layout'} style={{padding: '40px 40px', height: 'auto', minHeight: '100vh'}}>
-                    <Switch label={"Темная тема"} isActive={this.state.darkTheme} onSwitch={this.changeTheme} style={{justifyContent: 'center', marginBottom: '10px'}}/>
+                    {/*<Switch label={"Темная тема"} isActive={this.state.darkTheme} onSwitch={this.changeTheme} style={{justifyContent: 'center', marginBottom: '10px'}}/>*/}
+
                     {this.state.cards}
                 </Layout>
             </div>

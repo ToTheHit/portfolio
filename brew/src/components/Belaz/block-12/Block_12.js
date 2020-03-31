@@ -5,7 +5,7 @@ import iconCall from "../../../assets/Belaz/block-3/call.svg";
 
 const Block_12 = (props) => {
     return (
-        <div className={'Belaz-b12'}>
+        <section className={'Belaz-b12'}>
             <div className="Belaz-b12__content">
                 <div className="Belaz-b12__content--title">
                     Если Вам необходима бесплатная консультация по вопросу обслуживания
@@ -32,7 +32,7 @@ const Block_12 = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

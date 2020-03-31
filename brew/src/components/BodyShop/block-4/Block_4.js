@@ -51,7 +51,7 @@ class Block_4 extends Component {
 
     render() {
         return(
-            <div className={'bodyShop-b4'}>
+            <section className={'bodyShop-b4'}>
                 <div className="bodyShop-b4_text">Имеем в наличии детали на авто:</div>
                 <div className="bodyShop-b4_icons">
                     <div className="bodyShop-b4_icons-line" style={{marginTop: '60px'}}>
@@ -79,7 +79,7 @@ class Block_4 extends Component {
                     <div className="bodyShop-b4_videoBorder-content"/>
                 </div>
 
-            </div>
+            </section>
         )
     }
 }

@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react';
 import PropTypes from "prop-types";
 import './block_8.less';
-import photo from '../../../assets/Belaz/block-8/photo.png';
+import photo from '../../../assets/Belaz/block-8/photo.jpg';
 import reloadIcon from '../../../assets/Belaz/block-8/reload.svg';
 import Block_8_item from "./components/Block_8_item";
 
@@ -36,26 +36,9 @@ const Block_8 = (props) => {
     useEffect(() => {
         setItemObject(itemContent)
     }, []);
-/*
-    useEffect(() => {
-        let renderedItems = itemObject.map((item, index) => {
-            return (
-                <Block_8_item
-                    key={Math.random()}
-                    index={index}
-                    title={item.title}
-                    description={item.description}
-                    activeDescription={activeDescription}
-                    setActiveDescription={setActiveDescription}
-                />
-            )
-        });
-        setItems(renderedItems);
-    }, [itemObject.length]);
-*/
 
     return (
-        <div className={'Belaz-b8'}>
+        <section className={'Belaz-b8'}>
             <div className="Belaz-b8__content">
                 <div className="Belaz-b8__content--title">
                     У Вас остались вопросы?
@@ -94,7 +77,7 @@ const Block_8 = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

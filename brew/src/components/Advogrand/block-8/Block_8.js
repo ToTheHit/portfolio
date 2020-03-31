@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
 import './block_8.less';
-import pic1 from '../../../assets/Advogrand/block-7/b7-1.png';
-import pic2 from '../../../assets/Advogrand/block-7/b7-2.png';
-import pic3 from '../../../assets/Advogrand/block-7/b7-3.png';
+import pic1 from '../../../assets/Advogrand/block-7/b7-1.jpg';
+import pic2 from '../../../assets/Advogrand/block-7/b7-2.jpg';
+import pic3 from '../../../assets/Advogrand/block-7/b7-3.jpg';
 import Block_8_item from "./components/Block_8_item";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -71,7 +71,7 @@ class Block_8 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b8'} ref={this.getSectionRef}>
+            <section className={'Advogrand-b8'} ref={this.getSectionRef}>
                 <div className="Advogrand-b8_title">Отзывы</div>
                 <div className="Advogrand-b8_category">
                     <div className={this.state.currentCategory === category.health ? "Advogrand-b8_category--item Advogrand-b8_category--item_active" : "Advogrand-b8_category--item"}
@@ -105,7 +105,7 @@ class Block_8 extends Component {
                 >
                     {this.state.renderedItems}
                 </Slider>
-            </div>
+            </section>
         )
     }
 }

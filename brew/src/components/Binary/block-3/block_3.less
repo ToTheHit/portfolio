@@ -1,0 +1,113 @@
+@import "../../../Pages/Main/app.less";
+
+.Binary-b3 {
+  //height: 1700px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .Binary-textBlock {
+    padding-top: 85px;
+    &__title {
+      color: black;
+    }
+    &__line {
+      background-color: black;
+    }
+  }
+
+  &__menu {
+    margin-top: 50px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-item {
+      text-transform: uppercase;
+      color: black;
+      font-size: 15px;
+      padding: 10px 15px;
+      margin: 0 10px;
+
+      &:nth-child(3) {
+        margin-left: 15px;
+      }
+      &:hover {
+        color: #ada074;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1110px;
+
+    &-item {
+      width: 540px;
+      height: 365px;
+      background-color: #eaeaea;
+
+      &:nth-child(odd) {
+        margin: 0 15px 15px 0;
+      }
+      &:nth-child(even) {
+        margin: 0 0 15px 15px;
+      }
+    }
+  }
+
+  &__button {
+    margin: 50px 0;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 182px;
+    height: 47px;
+    font-size: 15.5px;
+    letter-spacing: 0.93px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: @media-width[PC_small]) {
+    .Binary-b3__list-item {
+      width: 45%;
+      max-height: 305px;
+    }
+    .Binary-b3__list {
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: @media-width[mobile]) {
+    .Binary-b3__list-item {
+      width: 90%;
+      &:not(:first-child) {
+        margin: 15px 0 0 0;
+      }
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    .Binary-b3__menu-item {
+      padding: 10px 10px;
+    }
+  }
+}

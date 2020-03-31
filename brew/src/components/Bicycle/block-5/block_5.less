@@ -1,0 +1,108 @@
+@import "../../../Pages/Main/app.less";
+
+.Bicycle-b5 {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__left {
+    height: 100%;
+    width: 33.33%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &-logo {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__center {
+    height: 100%;
+    width: 33.33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .Bicycle-textBlock {
+      height: 70%;
+
+      &__text {
+        &:after {
+          content: '';
+          width: 50px;
+          border-bottom: 1px solid #dedede;
+          position: absolute;
+          left: calc(50% - 25px);
+          bottom: -30px;
+        }
+      }
+      &:after {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
+        content: '';
+        position: absolute;
+        bottom: -9px;
+        z-index: 1;
+
+      }
+    }
+
+    &--photo1 {
+      height: 30%;
+      width: 100%;
+      background-size: cover;
+      min-height: 200px;
+    }
+  }
+
+  &__right {
+    height: 100%;
+    width: 33.33%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: @media-width[PC_small]) {
+    &__center {
+      height: 100%;
+      .Bicycle-textBlock {
+        height: 100%;
+      }
+      &--photo1 {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: @media-width[tablet]) {
+    height: auto;
+    flex-direction: column;
+    &__left {
+      width: 100%;
+      min-height: 230px;
+    }
+    &__center {
+      width: 100%;
+
+      .Bicycle-textBlock {
+        height: 100%;
+        padding: 50px 0;
+      }
+    }
+    &__right {
+      width: 100%;
+      min-height: 230px;
+    }
+  }
+}

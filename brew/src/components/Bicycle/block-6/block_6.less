@@ -1,0 +1,53 @@
+@import "../../../Pages/Main/app.less";
+
+.Bicycle-b6 {
+  height: 469px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__slider {
+    width: 100%;
+    .slick-prev, .slick-next {
+      display: none !important;
+    }
+    .slick-dots {
+      bottom: -100px;
+      left: 0;
+
+      .slick-active button:before{
+        background-color: #a9afb3;
+      }
+
+      li button:before {
+        width: 8px;
+        height: 8px;
+        border: solid 2px #a9afb3;
+        //background-color: black;
+        border-radius: 50%;
+        content: '';
+      }
+    }
+  }
+
+  @media (max-width: @media-width[tablet]) {
+    height: 430px;
+    &__slider {
+      padding: 0 25px 25px 25px;
+      .slick-dots {
+        bottom: -50px;
+      }
+    }
+  }
+
+  @media (max-width: @media-width[mobile]) {
+    &__slider {
+      .slick-dots {
+        bottom: -10px;
+      }
+    }
+  }
+
+}

@@ -5,9 +5,9 @@ import './block_10.less';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import pic1 from "../../../assets/Belaz/block-10/pic1.png";
-import pic2 from "../../../assets/Belaz/block-10/pic2.png";
-import pic3 from "../../../assets/Belaz/block-10/pic3.png";
+import pic1 from "../../../assets/Belaz/block-10/pic1.jpg";
+import pic2 from "../../../assets/Belaz/block-10/pic2.jpg";
+import pic3 from "../../../assets/Belaz/block-10/pic3.jpg";
 import Block_10_item from "./components/Block_10_item";
 
 const BLock_10 = (props) => {
@@ -40,12 +40,12 @@ const BLock_10 = (props) => {
                 />
             )
         });
-        console.log(renderedItems);
+
         setItems(renderedItems);
     }, [itemObject.length]);
 
     return (
-        <div className={'Belaz-b10'}>
+        <section className={'Belaz-b10'}>
             <div className="Belaz-b10__content">
                 <div className="Belaz-b10__content--title">
                     У нас собственный склад!
@@ -67,7 +67,7 @@ const BLock_10 = (props) => {
                     {items}
                 </Slider>
             </div>
-        </div>
+        </section>
     )
 };
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './block_7.less'
 
-import background from "../../../assets/Granit/block-7/b7-background_1.png";
+import background from "../../../assets/Granit/block-7/b7-background_1.jpg";
 import pic1 from "../../../assets/Granit/block-7/b7-1.svg";
 import pic2 from "../../../assets/Granit/block-7/b7-2.svg";
 import pic3 from "../../../assets/Granit/block-7/b7-3.svg";
@@ -20,7 +20,7 @@ class Block_7 extends Component {
 
     render() {
         return(
-            <div className={'granit-b7'} style={{backgroundImage: "url(" + background + ")"}}>
+            <section className={'granit-b7'} style={{backgroundImage: "url(" + background + ")"}}>
                 <div className="granit-b7--content">
                     {/*<span dangerouslySetInnerHTML={{__html: pic2}} className="granit-b7--content_mark"/>*/}
                     <div className="granit-b7--content_contacts">
@@ -48,7 +48,7 @@ class Block_7 extends Component {
 
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 

@@ -6,9 +6,11 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!--<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+<!--    <base href="/" />-->
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -23,9 +25,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Instant Brew</title>
-<!--    <link rel="stylesheet" type="text/css" href="main.css" />-->
+    <title>Dmitry Ushakov</title>
+    <link rel="stylesheet" type="text/css" href="/bundle/styles/main.css" />
     <script type="text/javascript">
+
       // Single Page Apps for GitHub Pages
       // https://github.com/rafrex/spa-github-pages
       // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
@@ -37,7 +40,7 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
+/*      (function(l) {
         if (l.search) {
           var q = {};
           l.search.slice(1).split('&').forEach(function(v) {
@@ -52,25 +55,16 @@
             );
           }
         }
-      }(window.location))
+      }(window.location))*/
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
+
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
-  <script type="text/javascript" src="main.bundle.js"></script>
+  <script type="text/javascript" src="/main.bundle.js"></script>
 </html>

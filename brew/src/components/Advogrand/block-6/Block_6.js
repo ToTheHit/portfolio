@@ -5,7 +5,6 @@ import pic1 from '../../../assets/Advogrand/block-5/b5-1.png'
 import pic2 from '../../../assets/Advogrand/block-5/b5-2.png'
 import pic3 from '../../../assets/Advogrand/block-5/b5-3.png'
 import pic4 from '../../../assets/Advogrand/block-5/b5-4.png'
-import background from "../../../assets/Advogrand/block-3/b3-background.png";
 
 class Block_6 extends Component {
     constructor(props) {
@@ -24,7 +23,7 @@ class Block_6 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b6'} ref={this.getSectionRef}>
+            <section className={'Advogrand-b6'} ref={this.getSectionRef}>
                 <div className="Advogrand-b6_title">Преимущество сервиса Advogrand<br/>по сравнению с другими юридическими компаниями</div>
                 <div className="Advogrand-b6_table">
                     <div className="Advogrand-b6_table--column_1">
@@ -71,7 +70,7 @@ class Block_6 extends Component {
                         <div className="Advogrand-b6_table--column_4--button">Узнать больше!</div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

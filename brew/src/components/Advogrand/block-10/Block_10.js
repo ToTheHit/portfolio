@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
 import './block_10.less'
-import pic1 from '../../../assets/Advogrand/block-9/b9-1.png';
-import pic2 from '../../../assets/Advogrand/block-9/b9-2.png';
-import pic3 from '../../../assets/Advogrand/block-9/b9-3.png';
+import pic1 from '../../../assets/Advogrand/block-9/b9-1.jpg';
+import pic2 from '../../../assets/Advogrand/block-9/b9-2.jpg';
+import pic3 from '../../../assets/Advogrand/block-9/b9-3.jpg';
 
 import Block_10_item from "./components/Block_10_item";
 
@@ -67,7 +67,7 @@ class Block_10 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b10'} ref={this.getSectionRef}>
+            <section className={'Advogrand-b10'} ref={this.getSectionRef}>
                 <div className="Advogrand-b10_content">
                     <div className="Advogrand-b10_content--title">Выберите тариф</div>
                     <div className="Advogrand-b10_content--description">
@@ -90,7 +90,7 @@ class Block_10 extends Component {
                         {this.state.renderedCards}
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

@@ -37,12 +37,11 @@ class Block_1 extends Component {
 
     render() {
         return(
-            <div className={'granit-b1'}>
+            <header className={'granit-b1'}>
                 <div className={'granit-b1_l1'}>
                     <Block_1_logo
                         picture={logo}
                     />
-
                     <div className={'granit-b1_l1--call'}>
                         <div className="granit-b1_l1--call_number">
                             <div className="granit-b1_l1--call_number_telephone">8 800 342-13-33</div>
@@ -58,7 +57,7 @@ class Block_1 extends Component {
                 <div className={'granit-b1_l2'}>
                     {this.state.buttons}
                 </div>
-            </div>
+            </header>
         )
     }
 }

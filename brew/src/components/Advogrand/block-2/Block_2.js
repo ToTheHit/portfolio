@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import './block_2.less'
-import background from "../../../assets/Advogrand/block-1/b1-background.png";
+import background from "../../../assets/Advogrand/block-1/b1-background.jpg";
 
 
 class Block_2 extends Component {
@@ -21,7 +21,7 @@ class Block_2 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b2'} style={{backgroundImage: "url(" + background + ")"}} ref={this.getSectionRef}>
+            <section className={'Advogrand-b2'} style={{backgroundImage: "url(" + background + ")"}} ref={this.getSectionRef}>
                 <div className="Advogrand-b2_content">
                     <div className="Advogrand-b2_content--firstBlock">Годовой абонемент на услуги <b style={{fontWeight: 800, fontSize: '40px'}}>«ЛИЧНОГО ЮРИСТА»</b></div>
                     <div className="Advogrand-b2_content--secondBlock">24 часа в сутки Ваш личный юрист – <b>Advogrand</b> на связи <br/>
@@ -29,7 +29,7 @@ class Block_2 extends Component {
                     <div className="Advogrand-b2_content--button">Хочу «личного юриста»!</div>
                 </div>
 
-            </div>
+            </section>
         )
     }
 }

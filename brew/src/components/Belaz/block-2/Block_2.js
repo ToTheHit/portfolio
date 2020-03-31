@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './block_2.less';
-import Block_2_background from "../../../assets/Belaz/block-2/background.png";
+import Block_2_background from "../../../assets/Belaz/block-2/background.jpg";
 import icon1 from '../../../assets/Belaz/block-2/pic1.png';
 import icon2 from '../../../assets/Belaz/block-2/pic2.png';
 import icon3 from '../../../assets/Belaz/block-2/pic3.png';
@@ -49,7 +49,7 @@ const Block_2 = () => {
     }, [itemObject.length]);
 
     return (
-        <div className={'Belaz-b2'} style={{backgroundImage: "url(" + Block_2_background + ")"}}>
+        <section className={'Belaz-b2'} style={{backgroundImage: "url(" + Block_2_background + ")"}}>
             <div className="Belaz-b2__content">
                 <div className="Belaz-b2__content-leftSide">
                     <div className="Belaz-b2__content-leftSide_content">
@@ -65,7 +65,7 @@ const Block_2 = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

@@ -15,7 +15,7 @@ class Block_3 extends Component {
 
     render() {
         return(
-            <div className={'bodyShop-b3'}>
+            <section className={'bodyShop-b3'}>
                 <div className="bodyShop-b3--title">Подробная заявка</div>
                 <div className="bodyShop-b3--description">Заполните форму и получите максимально точную цену!</div>
                 <div className="bodyShop-b3--form">
@@ -66,7 +66,7 @@ class Block_3 extends Component {
                         <div className="bodyShop-b3--form_column--button">Узнать цену</div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }
