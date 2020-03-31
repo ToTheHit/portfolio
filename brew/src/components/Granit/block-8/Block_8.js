@@ -11,13 +11,9 @@ class Block_8 extends Component {
         }
     }
 
-    componentDidMount() {
-
-    }
-
     render() {
         return(
-            <div className={'granit-b8'}>
+            <footer className={'granit-b8'}>
                 <div className="granit-b8--content">
                     <div className="granit-b8--content-left">
                         <Block_1_logo
@@ -33,7 +29,7 @@ class Block_8 extends Component {
                         <div className="granit-b8--content-right_button">Обратный звонок</div>
                     </div>
                 </div>
-            </div>
+            </footer>
         )
     }
 

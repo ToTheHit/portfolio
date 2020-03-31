@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './belaz.less';
 import Block_1 from "../../components/Belaz/block-1/Block_1";
 import Block_2 from "../../components/Belaz/block-2/Block_2";
@@ -14,23 +14,33 @@ import Block_11 from "../../components/Belaz/block-11/Block_11";
 import Block_12 from "../../components/Belaz/block-12/Block_12";
 import Block_13 from "../../components/Belaz/block-13/Block_13";
 import Block_14 from "../../components/Belaz/block-14/Block_14";
+import classNames from "../../lib/classNames";
 
 const Belaz = () => {
+    let [hidden, setHidden] = useState(true);
+
+    // Smooth fade in
+    useEffect(() => {
+        setHidden(false);
+    }, []);
+
     return(
-        <div className={'Belaz'}>
+        <div className={classNames('Belaz', {['hidden']: hidden})}>
                 <Block_1/>
-                <Block_2/>
-                <Block_3/>
-                <Block_4/>
-                <Block_5/>
-                <Block_6/>
-                <Block_7/>
-                <Block_8/>
-                <Block_9/>
-                <Block_10/>
-                <Block_11/>
-                <Block_12/>
-                <Block_13/>
+                <main>
+                    <Block_2/>
+                    <Block_3/>
+                    <Block_4/>
+                    <Block_5/>
+                    <Block_6/>
+                    <Block_7/>
+                    <Block_8/>
+                    <Block_9/>
+                    <Block_10/>
+                    <Block_11/>
+                    <Block_12/>
+                    <Block_13/>
+                </main>
                 <Block_14/>
         </div>
     )

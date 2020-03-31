@@ -45,7 +45,7 @@ const Block_9 = (props) => {
     }, [itemObject.length]);
 
     return (
-        <div className={'Belaz-b9'}>
+        <section className={'Belaz-b9'}>
             <div className="Belaz-b9__content">
                 <div className="Belaz-b9__content--title">
                     С нами удобно работать!
@@ -57,7 +57,7 @@ const Block_9 = (props) => {
                     {items}
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

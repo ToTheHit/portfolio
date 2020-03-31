@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import './block_5.less';
-import iconMail from "../../../assets/Belaz/block-3/mail.svg";
 import iconCall from "../../../assets/Belaz/block-3/call.svg";
-
-
 
 const Block_5 = (props) => {
     return (
-        <div className={'Belaz-b5'}>
+        <section className={'Belaz-b5'}>
             <div className="Belaz-b5__content">
                 <div className="Belaz-b5__content--title">Ищете конкретную деталь?</div>
                 <div className="Belaz-b5__content--subtitle">Если у Вас есть артикул - введите его в поле ниже и получите цену<br/>ПРЯМО СЕЙЧАС!</div>
@@ -43,7 +40,7 @@ const Block_5 = (props) => {
                     +7 (818) 247-47-25
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

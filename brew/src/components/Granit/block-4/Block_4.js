@@ -46,13 +46,13 @@ class Block_4 extends Component {
 
     render() {
         return(
-            <div className={'granit-b4'}>
+            <section className={'granit-b4'}>
                 <div className="granit-b4--title">Наши преимущества</div>
 
                 <div className="granit-b4--line">
                     {this.state.items}
                 </div>
-            </div>
+            </section>
         )
     }
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import './block_13.less';
-import background1 from '../../../assets/Belaz/block-13/background1.png'
-import background2 from '../../../assets/Belaz/block-13/background2.png'
+import background1 from '../../../assets/Belaz/block-13/background1.jpg'
+import background2 from '../../../assets/Belaz/block-13/background2.jpg'
 
 const Block_13 = (props) => {
     return (
-        <div>
+        <section>
             <div className={'Belaz-b13'} style={{backgroundImage: "url(" + background1 + ")"}}>
                 <div className="Belaz-b13__content">
                     <div className="Belaz-b13__content--title">
@@ -19,7 +19,7 @@ const Block_13 = (props) => {
                 </div>
             </div>
             <div className="Belaz-b13__map" style={{backgroundImage: "url(" + background2 + ")"}}/>
-        </div>
+        </section>
     )
 };
 

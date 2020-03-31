@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './block_2.less'
 
-import background from "../../../assets/Granit/block-2/b2-background.png";
+import background from "../../../assets/Granit/block-2/b2-background.jpg";
 
 class Block_2 extends Component {
     constructor(props) {
@@ -13,7 +13,9 @@ class Block_2 extends Component {
 
     render() {
         return(
-            <div className={'granit-b2'} style={{backgroundImage: "url(" + background + ")"}}>
+            <section className={'granit-b2'}
+                style={{backgroundImage: "url(" + background + ")"}}
+            >
                 <div className="granit-b2_content" >
                     <div className="granit-b2_content--title">быстрая доставка</div>
                     <div className="granit-b2_content--text">
@@ -25,7 +27,7 @@ class Block_2 extends Component {
                         <div className="granit-b2_content--linkLine_catalog" >перейти в каталог</div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 

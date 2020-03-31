@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import './block_7.less'
-import background from '../../../assets/Advogrand/block-6/backgroundpng.png';
+import background from '../../../assets/Advogrand/block-6/backgroundpng.jpg';
 import android from '../../../assets/Advogrand/block-6/Android-app-store.png';
 import ios from '../../../assets/Advogrand/block-6/iOS-app-store.png';
 
@@ -22,7 +22,7 @@ class Block_7 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b7'} style={{backgroundImage: "url(" + background + ")"}} ref={this.getSectionRef}>
+            <section className={'Advogrand-b7'} style={{backgroundImage: "url(" + background + ")"}} ref={this.getSectionRef}>
                 <div className="Advogrand-b7_content">
                     <div className="Advogrand-b7_content--left">
                         <div className="Advogrand-b7_content--left_title">Хотите получить бесплатную<br/>юридическую консультацию?</div>
@@ -46,7 +46,7 @@ class Block_7 extends Component {
                         <div className="Advogrand-b7_content--right_item" style={{backgroundImage: "url(" + ios + ")"}}/>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

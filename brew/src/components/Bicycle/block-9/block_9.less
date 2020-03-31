@@ -1,0 +1,83 @@
+@import "../../../Pages/Main/app.less";
+
+.Bicycle-b9 {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  &__logo {
+    width: 94px;
+    height: 85px;
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-size: 24px;
+    font-style: italic;
+    color: #848789;
+    line-height: 1.42;
+  }
+
+  &__form {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &-box {
+      max-width: 370px;
+      width: 66%;
+      height: 70px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-input {
+        border: solid 1px #d3d7d9;
+        font-family: "ProximaNove", sans-serif;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: calc(100% - 6px);
+        width: calc(100% - 30px);
+        background-color: white;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.2;
+
+        &::placeholder {
+          color: #929292;
+
+        }
+      }
+    }
+
+    &-submit {
+      margin-left: 10px;
+      width: 33%;
+      max-width: 126px;
+      height: 69px;
+      background-color: #64c29e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1;
+      color: #ffffff;
+      border: none;
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: @media-width[mobile]) {
+    height: 320px;
+  }
+}

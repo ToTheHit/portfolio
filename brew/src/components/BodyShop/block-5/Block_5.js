@@ -55,12 +55,12 @@ class Block_5 extends Component {
 
     render() {
         return(
-            <div className={'bodyShop-b5'}>
+            <section className={'bodyShop-b5'}>
                 <div className="bodyShop-b5_title">Клиенты о нас</div>
                 <div className="bodyShop-b5_reviews">
                     {this.state.reviewRendered}
                 </div>
-            </div>
+            </section>
         )
     }
 }

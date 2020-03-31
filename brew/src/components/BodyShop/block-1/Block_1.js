@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import './block_1.less'
-import background from '../../../assets/BodyShop/block-1/b1-background.png';
+import background from '../../../assets/BodyShop/block-1/b1-background.jpg';
 import icon1 from '../../../assets/BodyShop/block-1/b1-pic1.png';
 import icon2 from '../../../assets/BodyShop/block-1/b1-pic2.png';
 import icon3 from '../../../assets/BodyShop/block-1/b1-pic3.png';
@@ -43,7 +43,7 @@ class Block_1 extends Component {
 
     render() {
         return(
-            <div className={'bodyShop-b1'} style={{backgroundImage: "url(" + background + ")"}}>
+            <header className={'bodyShop-b1'} style={{backgroundImage: "url(" + background + ")"}}>
                 <div className="bodyShop-b1_topBar">
                     <div className="bodyShop-b1_topBar-left">ЛОГОТИП</div>
                     <div className="bodyShop-b1_topBar-right">
@@ -68,7 +68,7 @@ class Block_1 extends Component {
                         <div className="bodyShop-b1_buttons--right_text">Заполните подробную заявку онлайн!</div>
                     </div>
                 </div>
-            </div>
+            </header>
         )
     }
 }

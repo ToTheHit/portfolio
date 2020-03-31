@@ -4,7 +4,7 @@ import Block_1_logo from "../../../assets/Belaz/block-1/logo.png";
 
 const Block_1 = () => {
     return(
-        <div className={'Belaz-b1'}>
+        <header className={'Belaz-b1'}>
             <div className="Belaz-b1__content">
                 <div className="Belaz-b1__content--logo" style={{backgroundImage: "url(" + Block_1_logo + ")"}}/>
                 <div className="Belaz-b1__content--time">
@@ -23,7 +23,7 @@ const Block_1 = () => {
                     <div className="Belaz-b1__content_phoneCall--button">заказать звонок</div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 };
 

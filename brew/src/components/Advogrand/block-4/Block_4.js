@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import './block_4.less'
-import background from "../../../assets/Advogrand/block-3/b3-background.png";
+import background from "../../../assets/Advogrand/block-3/b3-background.jpg";
 
 
 class Block_4 extends Component {
@@ -21,7 +21,7 @@ class Block_4 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b4'} style={{backgroundImage: "url(" + background + ")"}} ref={this.getSectionRef}>
+            <section className={'Advogrand-b4'} style={{backgroundImage: "url(" + background + ")"}} ref={this.getSectionRef}>
                 <div className="Advogrand-b4_title">О сервисе Advogrand</div>
                 <div className="Advogrand-b4_description">
                     В составе нашей команды трудятся профессионалы, имеющие огромный опыт реальной юридической практики.
@@ -50,7 +50,7 @@ class Block_4 extends Component {
                         <div className="Advogrand-b4_data--item_text">работаем<br/>в 3-х странах мира</div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

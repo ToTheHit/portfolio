@@ -28,8 +28,13 @@ module.exports = merge(common, {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
+            filename: "/styles/[name].css",
+            chunkFilename: "/styles/[id].css"
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                PUBLIC_URL: JSON.stringify('') // Paste here part of Github Pages URL after /
+            },
         })
     ]
 });

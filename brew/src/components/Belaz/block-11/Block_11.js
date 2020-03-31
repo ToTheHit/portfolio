@@ -39,12 +39,11 @@ const Block_11 = (props) => {
                 />
             )
         });
-        console.log(renderedItems);
         setItems(renderedItems);
     }, [itemObject.length]);
 
     return (
-        <div className={'Belaz-b11'}>
+        <section className={'Belaz-b11'}>
             <div className="Belaz-b11__content">
                 <div className="Belaz-b11__content--title">
                     У нас в штате есть мобильные бригады,<br/>
@@ -56,7 +55,7 @@ const Block_11 = (props) => {
                     {items}
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

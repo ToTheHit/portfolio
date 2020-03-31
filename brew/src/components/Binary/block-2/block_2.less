@@ -1,0 +1,41 @@
+@import "../../../Pages/Main/app.less";
+
+.Binary-b2 {
+  //height: 820px;
+  height: auto;
+
+  .Binary-textBlock {
+    padding-top: 130px;
+    color: black;
+    &__line {
+      background-color: black;
+    }
+    &__text {
+      max-width: 704px;
+    }
+  }
+
+  &__list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: @media-width[mobile]) {
+    .Binary-textBlock {
+      padding-top: 40px;
+      &__text {
+        padding: 0 15px;
+      }
+    }
+    &__list {
+      margin-top: 30px;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+  }
+
+}

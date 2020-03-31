@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from "prop-types";
 import './block_6.less';
-import image1 from '../../../assets/Belaz/block-6/pic1.png';
-import image2 from '../../../assets/Belaz/block-6/pic2.png';
-import image3 from '../../../assets/Belaz/block-6/pic3.png';
+import image1 from '../../../assets/Belaz/block-6/pic1.jpg';
+import image2 from '../../../assets/Belaz/block-6/pic2.jpg';
+import image3 from '../../../assets/Belaz/block-6/pic3.jpg';
 import Block_6_item from "../block-6/components/Block_6_item";
 
 const Block_6 = (props) => {
@@ -44,14 +44,14 @@ const Block_6 = (props) => {
     }, [itemObject.length]);
 
     return (
-        <div className={'Belaz-b6'}>
+        <section className={'Belaz-b6'}>
             <div className="Belaz-b6__content">
                 <div className="Belaz-b6__content--title">Мы гарантируем сохранность деталей<br/>во время перевозки!</div>
                 <div className="Belaz-b6__content--list">
                     {items}
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

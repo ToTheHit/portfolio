@@ -20,7 +20,7 @@ class Block_11 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b11'} ref={this.getSectionRef}>
+            <section className={'Advogrand-b11'} ref={this.getSectionRef}>
                 <div className="Advogrand-b11_backgroundLeft"/>
                 <div className="Advogrand-b11_backgroundRight"/>
 
@@ -64,7 +64,7 @@ class Block_11 extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

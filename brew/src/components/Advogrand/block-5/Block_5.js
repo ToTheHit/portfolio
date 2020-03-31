@@ -22,7 +22,7 @@ class Block_5 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b5'} ref={this.getSectionRef}>
+            <section className={'Advogrand-b5'} ref={this.getSectionRef}>
                 <div className="Advogrand-b5_title">Как оказывается услуга</div>
                 <div className="Advogrand-b5_raw">
                     <div className="Advogrand-b5_raw--item">
@@ -40,7 +40,7 @@ class Block_5 extends Component {
                         <div className="Advogrand-b5_raw--item_description"><b>Ваш вопрос решен!</b></div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

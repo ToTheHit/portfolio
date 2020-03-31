@@ -49,7 +49,7 @@ const Block_4 = () => {
     }, [itemObject.length]);
 
     return (
-        <div className={'Belaz-b4'}>
+        <section className={'Belaz-b4'}>
             <div className="Belaz-b4__content">
                 <div className="Belaz-b4__content--title">Вам не придется ждать!</div>
                 <div className="Belaz-b4__content--subtitle">Любые запчасти для всех моеделей Белаз<br/>всегда в наличии!</div>
@@ -57,7 +57,7 @@ const Block_4 = () => {
                     {items}
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

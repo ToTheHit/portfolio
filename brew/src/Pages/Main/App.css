@@ -205,8 +205,12 @@ div#root {
   letter-spacing: -0.24px;
   font-weight: 400;
 }
+div#root > .hidden {
+   opacity: 0;
+   pointer-events: none;
+}
 
-h1 {
+/*h1 {
   font-family: var(--display-text);
   color: #000000;
   font-size: 24px;
@@ -234,7 +238,8 @@ h4 {
   font-size: 17px;
   line-height: 22px;
   font-weight: 700;
-}
+}*/
+/*
 
 h4.category {
   font-family: var(--common-text), "Noto Sans";
@@ -275,6 +280,8 @@ h4.caption-2 {
   font-weight: 600;
   color: var(--caption-color);
 }
+*/
+/*
 
 p {
   font-family: var(--common-text), "Noto Sans";
@@ -288,4 +295,5 @@ p > b, strong {
   font-size: inherit;
   font-weight: 700;
 }
+*/
 

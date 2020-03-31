@@ -12,7 +12,7 @@ class Block_6 extends Component {
 
     render() {
         return(
-            <div className={'bodyShop-b6'}>
+            <section className={'bodyShop-b6'}>
                 <div className="bodyShop-b6_text1">Нужна консультация?</div>
                 <div className="bodyShop-b6_text2">Заполните форму и получите максимально точную цену!</div>
                 <div className="bodyShop-b6_form">
@@ -22,7 +22,7 @@ class Block_6 extends Component {
                     </div>
                     <button className="bodyShop-b6_form--button">Заказать консультацию</button>
                 </div>
-            </div>
+            </section>
         )
     }
 }

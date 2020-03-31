@@ -17,7 +17,7 @@ class Block_1 extends Component {
 
     render() {
         return (
-            <div className={'advogrand-b1'}>
+            <header className={'advogrand-b1'}>
                 <div className="advogrand-b1_firstLine">
                     <div className="advogrand-b1_firstLine_menu">
                         <div className="advogrand-b1_firstLine_menu--phone">+7 499 322-85-80</div>
@@ -47,7 +47,7 @@ class Block_1 extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
         )
     }
 }

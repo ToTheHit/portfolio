@@ -57,7 +57,7 @@ class Block_2 extends Component {
 
     render() {
         return(
-            <div className={'bodyShop-b2'}>
+            <section className={'bodyShop-b2'}>
                 <div className="bodyShop-b2_content">
                     <div className="bodyShop-b2_content--firstLine">
                         {this.state.items[0]}
@@ -69,7 +69,7 @@ class Block_2 extends Component {
                         {this.state.items[4]}
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

@@ -1,5 +1,7 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.config');
+const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 module.exports = merge(common, {
     mode: 'development',
@@ -20,11 +22,23 @@ module.exports = merge(common, {
                 test: /\.css$/,
                 use: [
                     {
-                        loader: 'style-loader'
+                        loader: 'style-loader',
+                        options: {
+                            injectType: "styleTag"
+                        }
                     },
                     {
                         loader: 'css-loader',
-                        options: {}
+                        options: { }
+                    },
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            plugins: [
+                                autoprefixer()
+                            ],
+                            sourceMap: true
+                        }
                     }
                 ]
             },
@@ -32,11 +46,23 @@ module.exports = merge(common, {
                 test: /\.less$/,
                 use: [
                     {
-                        loader: "style-loader"
+                        loader: "style-loader",
+                        options: {
+                            injectType: "styleTag"
+                        }
                     },
                     {
                         loader: "css-loader",
                         options: {}
+                    },
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            plugins: [
+                                autoprefixer()
+                            ],
+                            sourceMap: true
+                        }
                     },
                     {
                         loader: "less-loader"
@@ -44,5 +70,12 @@ module.exports = merge(common, {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                PUBLIC_URL: JSON.stringify('')
+            },
+        })
+    ]
 });

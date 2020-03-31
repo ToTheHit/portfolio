@@ -11,13 +11,13 @@ class Block_8 extends Component {
     render() {
         return(
             <div className={'bodyShop-b8'}>
-                <div className="bodyShop-b1_topBar" style={{height: '110px', background: 'none'}}>
+                <footer className="bodyShop-b1_topBar" style={{height: '110px', background: 'none'}}>
                     <div className="bodyShop-b1_topBar-left">ЛОГОТИП</div>
                     <div className="bodyShop-b1_topBar-right">
                         <div className="bodyShop-b1_topBar-right--phone" style={{color: '#000000'}}>8 800 232 32 12</div>
                         <div className="bodyShop-b1_topBar-right--text">Заказать обратный звонок</div>
                     </div>
-                </div>
+                </footer>
             </div>
         )
     }

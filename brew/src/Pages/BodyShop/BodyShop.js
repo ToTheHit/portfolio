@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import classNames from '../../lib/classNames';
 
 import './bodyShop.less'
 import Block_1 from "../../components/BodyShop/block-1/Block_1"
@@ -14,20 +15,34 @@ class BodyShop extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            hide: true
         }
+        this.changeHide = this.changeHide.bind(this);
+
+    }
+
+    changeHide(state) {
+        setTimeout(() => {
+            this.setState({hide: state})
+
+        }, 100)
+    }
+    componentDidMount() {
+        this.changeHide(false);
     }
 
     render() {
         return(
-            <div className={'bodyShop'}>
+            <div className={classNames('bodyShop', {['hidden']: this.state.hide})}>
                 <Block_1/>
-                <Block_2/>
-                <Block_3/>
-                <Block_4/>
-                <Block_5/>
-                <Block_6/>
-                <Block_7/>
+                <main>
+                    <Block_2/>
+                    <Block_3/>
+                    <Block_4/>
+                    <Block_5/>
+                    <Block_6/>
+                    <Block_7/>
+                </main>
                 <Block_8/>
             </div>
         )

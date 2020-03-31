@@ -1,19 +1,34 @@
 import React, {Component} from 'react';
-import {  Link, fade } from "react-tiger-transition";
 import PropTypes from 'prop-types';
-
 import './card.less';
 import Layout from "../../InstantBrew/Layout/Layout";
 import Title from "../../InstantBrew/Title/Title";
 import Paragraph from "../../InstantBrew/Paragraph/Paragraph";
-// import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 class Card extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            redirect: false
+        };
+    }
+
+    handleRedirect() {
+        this.props.changeHide(true);
+        setTimeout(() => {
+            this.setState({redirect: true})
+        }, 300)
+    }
 
     render() {
+        if (this.state.redirect) {
+            return <Redirect to={this.props.link} push={true}/>
+        }
+
         return(
             <Layout className={'Card'}>
-                <Link to={this.props.link} style={{ textDecoration: 'none' }} transition='default-fade'>
+                <div to={this.props.link} style={{ textDecoration: 'none' }} onClick={() => this.handleRedirect()}>
                     <div className={'Card_picture'} style={{backgroundImage: "url("+ this.props.pictureURL +")"}} />
 
                     <div className={'Card_title'}>
@@ -28,7 +43,7 @@ class Card extends Component {
                             {this.props.description}
                         </Paragraph>
                     </div>
-                </Link>
+                </div>
             </Layout>
         )
     }

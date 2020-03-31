@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import './block_3.less';
-import Block_3_background from "../../../assets/Belaz/block-3/background.png";
+import Block_3_background from "../../../assets/Belaz/block-3/background.jpg";
 import iconCall from "../../../assets/Belaz/block-3/call.svg";
 import iconMail from "../../../assets/Belaz/block-3/mail.svg";
 import iconClock from "../../../assets/Belaz/block-3/clock.svg";
@@ -9,7 +9,7 @@ import iconClock from "../../../assets/Belaz/block-3/clock.svg";
 
 const Block_3 = () => {
     return (
-        <div className={'Belaz-b3'} style={{backgroundImage: "url(" + Block_3_background + ")"}}>
+        <section className={'Belaz-b3'} style={{backgroundImage: "url(" + Block_3_background + ")"}}>
             <div className="Belaz-b3__content">
                 <div className="Belaz-b3__content--title">
                     Получи прайс прямо сейчас на электронную почту!
@@ -41,7 +41,7 @@ const Block_3 = () => {
                     <div className="Belaz-b3__content--getPrice_button">Получить прайс</div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

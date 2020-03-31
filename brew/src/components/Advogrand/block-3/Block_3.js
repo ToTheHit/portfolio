@@ -78,7 +78,7 @@ class Block_3 extends Component {
 
     render() {
         return (
-            <div className={'Advogrand-b3'} ref={this.getSectionRef}>
+            <section className={'Advogrand-b3'} ref={this.getSectionRef}>
                 <div className="Advogrand-b3_content">
                     <div className="Advogrand-b3_content--title">Услуги предоставляемые сервисом Advogrand</div>
                     <div className="Advogrand-b3_content--pics">
@@ -101,7 +101,7 @@ class Block_3 extends Component {
                     </div>
 
                 </div>
-            </div>
+            </section>
         )
     }
 }
