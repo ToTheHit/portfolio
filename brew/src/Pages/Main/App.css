@@ -205,10 +205,12 @@ div#root {
   letter-spacing: -0.24px;
   font-weight: 400;
 }
-div#root > .hidden {
+/*div#root > .hidden {
    opacity: 0;
    pointer-events: none;
-}
+}*/
+
+
 
 /*h1 {
   font-family: var(--display-text);

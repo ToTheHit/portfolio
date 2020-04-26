@@ -1,0 +1,48 @@
+.ThreeDModeling-s9 {
+  background-color: #f2f8f9;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+
+  .ThreeDModeling_title {
+    &--first {
+      &::after {
+        border-bottom-color: #19b5fe;
+      }
+    }
+  }
+
+  .content {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  &__post {
+    max-width: 555px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:last-child {
+      margin-left: 30px;
+    }
+  }
+  &__photo img {
+    width: 100%;
+    height: 100%;
+  }
+  &__link {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    text-align: center;
+    color: #19b5fe;
+    margin-top: 30px;
+    max-width: 505px;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

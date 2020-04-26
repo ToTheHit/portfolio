@@ -1,0 +1,59 @@
+.ThreeDModeling-s8 {
+  min-height: 1100px;
+  .ThreeDModeling_title {
+    &--first {
+      &::after {
+        border-bottom-color: #19b5fe;
+      }
+    }
+  }
+
+  &__personsList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__quote {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 945px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.44;
+    color: #464646;
+    text-align: center;
+    margin-top: 30px;
+
+    &--title {
+      font-size: 30px;
+    }
+    &--text {
+      margin: 10px 0;
+    }
+    &--post {
+      font-size: 16px;
+    }
+
+    &-before {
+      width: 50px;
+      fill: #22a7f0;
+      transform: rotate(180deg) scale(-1, 1);
+      position: absolute;
+      left: -100px;
+      top: -20px;
+    }
+    &-after {
+      width: 50px;
+      fill: #22a7f0;
+      transform: rotate(180deg);
+      position: absolute;
+      right: -100px;
+      bottom: 0;
+    }
+  }
+}

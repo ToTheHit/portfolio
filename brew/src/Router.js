@@ -1,6 +1,7 @@
-import React, {Component, lazy, Suspense} from 'react';
-import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
+import React, { Component, lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 
+import './index.css';
 // import App from "./Pages/Main/App";
 // import Granit from "./Pages/Granit/Granit";
 /*import BodyShop from "./Pages/BodyShop/BodyShop";
@@ -17,84 +18,62 @@ const Belaz = lazy(() => import('./Pages/Belaz/Belaz'));
 const Bicycle = lazy(() => import('./Pages/Bicycle/Bicycle'));
 const Binary = lazy(() => import('./Pages/Binary/Binary'));
 const ThreeDModeling = lazy(() => import('./Pages/ThreeDModeling/ThreeDModeling'));
+const IDcard = lazy(() => import('./Pages/IDcard/IDcard'));
+const Empty = lazy(() => import('./Pages/Empty/Empty'))
 
 const ScrollToTop = () => {
-    window.scrollTo({top: 0, behavior: 'instant'});
-    return null;
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  return null;
 };
 
+const routes = [
+  { path: '/bodyshop', Component: BodyShop },
+  { path: '/granit', Component: Granit },
+  { path: '/advogrand', Component: Advogrand },
+  { path: '/belaz', Component: Belaz },
+  { path: '/bicycle', Component: Bicycle },
+  { path: '/binary', Component: Binary },
+  { path: '/3dmodeling', Component: ThreeDModeling },
+  { path: '/idcard', Component: IDcard },
+  { path: '/empty', Component: Empty }
+]
 
 class AppRouter extends Component {
-    render() {
-        return (
-            <Router basename={process.env.PUBLIC_URL}>
-                <Suspense fallback={<div/>}> {/*Заглушка пока грузится бандл и стили*/}
-                    <Route component={ScrollToTop} />
-                    <Switch>
-                        <Route exact path={'/'}>
-                            <App/>
-                        </Route>
+  render() {
+    return (
+      <Router basename={process.env.PUBLIC_URL}>
+        <Suspense fallback={<div />}> {/*Заглушка пока грузится бандл и стили*/}
+          <Route component={ScrollToTop} />
 
-                        <Route path={'/granit/:NotFound'}>
-                            <Redirect to="/404" />
-                        </Route>
-                        <Route path={'/granit'}>
-                            <Granit/>
-                        </Route>
+          <Switch>
+            <Route exact path={'/'}>
+              <App />
+            </Route>
 
-                        <Route path={'/bodyshop/:NotFound'}>
-                            <Redirect to="/404" />
-                        </Route>
-                        <Route path={'/bodyshop'}>
-                            <BodyShop/>
-                        </Route>
+            {routes.map(({ path }) => {
+              return <Route path={path + '/:NotFound'} key={Math.random()}>
+                <Redirect to="/404" />
+              </Route>
+            })}
+            {routes.map(({ path, Component }) => (
+              <Route key={path} exact path={path}>
+                {({ match }) => (
+                  <Component />
+                )}
+              </Route>
+            ))}
 
-                        <Route path={'/advogrand/:NotFound'}>
-                            <Redirect to="/404" />
-                        </Route>
-                        <Route path={'/advogrand'}>
-                            <Advogrand/>
-                        </Route>
-
-                        <Route path={'/belaz/:NotFound'}>
-                            <Redirect to="/404" />
-                        </Route>
-                        <Route path={'/belaz'}>
-                            <Belaz/>
-                        </Route>
-
-                        <Route path={'/bicycle/:NotFound'}>
-                            <Redirect to="/404" />
-                        </Route>
-                        <Route path={'/bicycle'}>
-                            <Bicycle/>
-                        </Route>
-
-                        <Route path={'/binary/:NotFound'}>
-                            <Redirect to="/404" />
-                        </Route>
-                        <Route path={'/binary'}>
-                            <Binary/>
-                        </Route>
-
-                        <Route path={'/3dmodeling/:NotFound'}>
-                            <Redirect to="/404" />
-                        </Route>
-                        <Route path={'/3dmodeling'}>
-                            <ThreeDModeling/>
-                        </Route>
-
-                        <Route path={'/404'}>
-                            <div>404</div>
-                        </Route>
-                        <Route>
-                            <Redirect to="/404" />
-                        </Route>
-                    </Switch>
-                </Suspense>
-            </Router>
-        );
-    }
+            <Route path={'/404'}>
+              <div>404</div>
+            </Route>
+            <Route>
+              <Redirect to="/404" />
+            </Route>
+          </Switch>
+        </Suspense>
+      </Router>
+    );
+  }
 }
 
 export default AppRouter;

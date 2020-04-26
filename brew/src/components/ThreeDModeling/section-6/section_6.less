@@ -1,0 +1,41 @@
+.ThreeDModeling-s6 {
+
+  .ThreeDModeling_title {
+    color: #363636;
+    &--first {
+      &::after {
+        border-bottom-color: #19b5fe;
+      }
+    }
+  }
+
+  .content {
+    margin-bottom: 65px;
+  }
+
+  &_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 260px;
+    width: 100%;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+  &--picture {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+  }
+  &--description {
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

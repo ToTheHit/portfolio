@@ -18,10 +18,20 @@
 
     &--item {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       flex-direction: column;
       height: 175px;
+
+      &_pic {
+        width: 130px !important;
+        height: 90px;
+        margin-bottom: 55px;
+        svg {
+          width: inherit;
+          height: inherit;
+        }
+      }
 
       &_description {
         text-align: center;

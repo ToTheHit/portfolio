@@ -1,7 +1,41 @@
-.ThreeDModels {
-  & .YT_video {
-    height: 190px;
-    width: 340px;
+@import '../../Pages/Main/app';
+
+.ThreeDModeling {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  transition: opacity 2s linear;
+  min-width: 1200px;
+
+  .content {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_input {
+
+    &-type1 {
+      width: 290px;
+      height: 51px;
+      border-radius: 40px;
+      padding: 0 15px 0 15px;
+      border: none;
+    }
+    &-type2 {
+      width: 210px;
+      height: 51px;
+      border-radius: 10px;
+      padding: 0 15px 0 15px;
+      border: none;
+      &:nth-child(2) {
+        margin: 0 15px;
+      }
+    }
   }
   
 }

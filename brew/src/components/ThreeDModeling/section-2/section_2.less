@@ -1,0 +1,60 @@
+.ThreeDModeling-s2 {
+  height: 1215px;
+  h2, h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  .ThreeDModeling_title {
+    color: #363636;
+    &--first {
+      &::after {
+        border-bottom-color: #19b5fe;
+      }
+    }
+  }
+
+  &_line {
+    display: flex;
+    line-height: 1.33;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(2) {
+      margin: 10px 0;
+      flex-direction: row-reverse;
+    }
+
+    &--title {
+      font-size: 28px;
+      font-weight: 300;
+      color: #19b5fe;
+    }
+    &--description {
+      width: 555px;
+      font-size: 18px;
+      font-weight: 100;
+      line-height: 1.7;
+      text-align: justify;
+      color: #464646;
+    }
+    &--button {
+      margin-top: 25px;
+      width: 181px;
+      height: 51px;
+      background-color: #19b5fe;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 30px;
+      font-size: 14px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &--picture {
+      width: 555px;
+      height: 320px;
+    }
+  }
+}

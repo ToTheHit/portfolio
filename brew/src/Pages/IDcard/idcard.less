@@ -1,0 +1,268 @@
+.IDcard {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //position: relative;
+  font-family: "FuturaNo2DEE";
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: #dddddd;
+    z-index: -1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: #22222a;
+    z-index: -1;
+  }
+
+  &__card {
+    position: relative;
+    width: 400px;
+    min-height: 700px;
+    background-color: white;
+    display: flex;
+    //justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px -10px 28px -5px rgb(34, 34, 42);;
+
+    &-background {
+      z-index: 1;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+    &-content {
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &--bg1 {
+      position: absolute;
+      transform: rotate(-37deg);
+      width: 170%;
+      height: 500px;
+      background-color: #212129;
+      left: -220px;
+      top: -380px;
+    }
+    &--bg2 {
+      position: absolute;
+      background-color: #e52427;
+      width: 90px;
+      height: 90px;
+      transform: rotate(-37deg);
+      left: -70px;
+      top: 191px;
+    }
+    &--bg3 {
+      position: absolute;
+      background-color: #e52427;
+      width: 50%;
+      height: 50%;
+      transform: rotate(-37deg);
+      top: -20%;
+      right: -25%;
+    }
+    &--bg4 {
+      position: absolute;
+      background-color: #8d191c;
+      width: 500px;
+      height: 100px;
+      transform: rotate(-37deg);
+      right: -300px;
+      bottom: 0;
+    }
+
+    &-loading {
+      font-size: 0;
+      height: 25px;
+      width: 120px;
+      background: #e52427;
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-size: 40px 40px;
+      animation: loading 2s linear infinite;
+    }
+
+    &-loadingPhoto {
+      background: #e52427;
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-size: 40px 40px;
+      animation: loading 2s linear infinite;
+    }
+
+    &--photoContainer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 165px;
+      height: 165px;
+      border-radius: 50%;
+      margin-top: 45px;
+      //z-index: 2;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        border-radius: 50%;
+        border: 1px red solid;
+
+      }
+
+    }
+    &--photo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      //z-index: 2;
+    }
+    &--name {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 25px;
+      text-align: center;
+      //z-index: 2;
+
+      &_item {
+        margin-top: 5px;
+      }
+    }
+
+    &--info {
+      width: 75%;
+      font-weight: 700;
+      font-size: 20px;
+      //z-index: 2;
+      &:last-child {
+        margin-bottom: 50px;
+      }
+
+      &_item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        position: relative;
+
+        &:after {
+          content: '';
+          width: 100%;
+          position: absolute;
+          bottom: -10px;
+          border: 1px solid red;
+          opacity: 0.2;
+        }
+
+        &-title {
+          width: 40%;
+        }
+        &-content {
+          text-align: right;
+          max-width: 210px;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+
+  &__reload {
+    width: 400px;
+    height: 50px;
+    background: #e52427;
+    font-family: "FuturaNo2DEE";
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    //border-color: #22222a;
+    border: none;
+    border-top: 1px solid #22222a;
+
+    &:disabled {
+      background: lightgray;
+
+    }
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+  @keyframes loading {
+    0% {
+      background-position: 40px 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+}
+
+
+@font-face {
+  font-family: 'FuturaNo2DEE';
+  src: url('../../assets/IDcard/fonts/FuturaNo2DEE-Book.eot');
+  src: local('FuturaNo2DEE'), local('FuturaNo2DEE-Book'),
+  url('../../assets/IDcard/fonts/FuturaNo2DEE-Book.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/IDcard/fonts/FuturaNo2DEE-Book.woff') format('woff'),
+  url('../../assets/IDcard/fonts/FuturaNo2DEE-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaNo2SCDEEBoo';
+  src: url('../../assets/IDcard/fonts/FuturaNo2SCDEE-Book.eot');
+  src: local('FuturaNo2SCDEEBoo'), local('FuturaNo2SCDEE-Book'),
+  url('../../assets/IDcard/fonts/FuturaNo2SCDEE-Book.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/IDcard/fonts/FuturaNo2SCDEE-Book.woff') format('woff'),
+  url('../../assets/IDcard/fonts/FuturaNo2SCDEE-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaNo2DEEMed';
+  src: url('../../assets/IDcard/fonts/FuturaNo2DEE-Medi.eot');
+  src: local('FuturaNo2DEEMed'), local('FuturaNo2DEE-Medi'),
+  url('../../assets/IDcard/fonts/FuturaNo2DEE-Medi.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/IDcard/fonts/FuturaNo2DEE-Medi.woff') format('woff'),
+  url('../../assets/IDcard/fonts/FuturaNo2DEE-Medi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaNo2SCDEEMed';
+  src: url('../../assets/IDcard/fonts/FuturaNo2SCDEE-Medi.eot');
+  src: local('FuturaNo2SCDEEMed'), local('FuturaNo2SCDEE-Medi'),
+  url('../../assets/IDcard/fonts/FuturaNo2SCDEE-Medi.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/IDcard/fonts/FuturaNo2SCDEE-Medi.woff') format('woff'),
+  url('../../assets/IDcard/fonts/FuturaNo2SCDEE-Medi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
