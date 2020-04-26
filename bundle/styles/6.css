@@ -125,22 +125,22 @@
 @font-face {
   font-family: "Lato";
   font-weight: 300;
-  src: url(./bundle/assets/fonts/Lato-Light.ttf);
+  src: url(./1/assets/fonts/Lato-Light.ttf);
 }
 @font-face {
   font-family: "Lato";
   font-weight: 400;
-  src: url(./bundle/assets/fonts/Lato-Regular.ttf);
+  src: url(./1/assets/fonts/Lato-Regular.ttf);
 }
 @font-face {
   font-family: "Lato";
   font-weight: 500;
-  src: url(./bundle/assets/fonts/Lato-Semibold.ttf);
+  src: url(./1/assets/fonts/Lato-Semibold.ttf);
 }
 @font-face {
   font-family: "Lato";
   font-weight: 700;
-  src: url(./bundle/assets/fonts/Lato-Bold.ttf);
+  src: url(./1/assets/fonts/Lato-Bold.ttf);
 }
 
 .bodyShop-b1 {
