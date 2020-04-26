@@ -121,26 +121,26 @@
 @font-face {
   font-family: "GothamPro";
   font-weight: 400;
-  src: url(/assets/fonts/GothamPro.eot);
-  src: url(/assets/fonts/GothamPro.ttf) format("truetype");
+  src: url(/bundle/assets/fonts/GothamPro.eot);
+  src: url(/bundle/assets/fonts/GothamPro.ttf) format("truetype");
 }
 @font-face {
   font-family: "GothamPro";
   font-weight: 700;
-  src: url(/assets/fonts/GothamPro-Bold.eot);
-  src: url(/assets/fonts/GothamPro-Bold.ttf) format("truetype");
+  src: url(/bundle/assets/fonts/GothamPro-Bold.eot);
+  src: url(/bundle/assets/fonts/GothamPro-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "GothamPro";
   font-weight: 300;
-  src: url(/assets/fonts/GothamPro-Light.eot);
-  src: url(/assets/fonts/GothamPro-Light.ttf) format("truetype");
+  src: url(/bundle/assets/fonts/GothamPro-Light.eot);
+  src: url(/bundle/assets/fonts/GothamPro-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "GothamPro";
   font-weight: 500;
-  src: url(/assets/fonts/GothamPro-Medium.eot);
-  src: url(/assets/fonts/GothamPro-Medium.ttf) format("truetype");
+  src: url(/bundle/assets/fonts/GothamPro-Medium.eot);
+  src: url(/bundle/assets/fonts/GothamPro-Medium.ttf) format("truetype");
 }
 
 .granit-b1_l1 {

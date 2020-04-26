@@ -122,7 +122,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url(/assets/images/c5cd7f5300576ab4c88202b42f6ded62.gif) center center no-repeat;
+    background: #fff url(/bundle/assets/images/c5cd7f5300576ab4c88202b42f6ded62.gif) center center no-repeat;
 }
 
 /* Icons */
@@ -132,8 +132,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url(/assets/fonts/slick.eot);
-    src: url(/assets/fonts/slick.eot?#iefix) format('embedded-opentype'), url(/assets/fonts/slick.woff) format('woff'), url(/assets/fonts/slick.ttf) format('truetype'), url([object Module]#slick) format('svg');
+    src: url(/bundle/assets/fonts/slick.eot);
+    src: url(/bundle/assets/fonts/slick.eot?#iefix) format('embedded-opentype'), url(/bundle/assets/fonts/slick.woff) format('woff'), url(/bundle/assets/fonts/slick.ttf) format('truetype'), url([object Module]#slick) format('svg');
 }
 /* Arrows */
 .slick-prev,
