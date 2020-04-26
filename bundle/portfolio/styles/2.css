@@ -126,33 +126,33 @@
   font-family: "ProximaNove";
   font-weight: 300;
   font-style: normal;
-  src: url(/bundle/assets/fonts/ProximaNova-Light.eot);
-  src: url(/bundle/assets/fonts/ProximaNova-Light.woff) format('woff');
-  src: url(/bundle/assets/fonts/ProximaNova-Light.ttf) format('truetype');
+  src: url(./bundle/assets/fonts/ProximaNova-Light.eot);
+  src: url(./bundle/assets/fonts/ProximaNova-Light.woff) format('woff');
+  src: url(./bundle/assets/fonts/ProximaNova-Light.ttf) format('truetype');
 }
 @font-face {
   font-family: "ProximaNove";
   font-weight: normal;
   font-style: normal;
-  src: url(/bundle/assets/fonts/ProximaNova-Regular.eot);
-  src: url(/bundle/assets/fonts/ProximaNova-Regular.woff) format('woff');
-  src: url(/bundle/assets/fonts/ProximaNova-Regular.ttf) format('truetype');
+  src: url(./bundle/assets/fonts/ProximaNova-Regular.eot);
+  src: url(./bundle/assets/fonts/ProximaNova-Regular.woff) format('woff');
+  src: url(./bundle/assets/fonts/ProximaNova-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: "ProximaNove";
   font-weight: 800;
   font-style: normal;
-  src: url(/bundle/assets/fonts/ProximaNova-Extrabold.eot);
-  src: url(/bundle/assets/fonts/ProximaNova-Extrabold.woff) format('woff');
-  src: url(/bundle/assets/fonts/ProximaNova-Extrabold.ttf) format('truetype');
+  src: url(./bundle/assets/fonts/ProximaNova-Extrabold.eot);
+  src: url(./bundle/assets/fonts/ProximaNova-Extrabold.woff) format('woff');
+  src: url(./bundle/assets/fonts/ProximaNova-Extrabold.ttf) format('truetype');
 }
 @font-face {
   font-family: "ProximaNove";
   font-weight: bold;
   font-style: normal;
-  src: url(/bundle/assets/fonts/ProximaNova-Bold.eot);
-  src: url(/bundle/assets/fonts/ProximaNova-Bold.woff) format('woff');
-  src: url(/bundle/assets/fonts/ProximaNova-Bold.ttf) format('truetype');
+  src: url(./bundle/assets/fonts/ProximaNova-Bold.eot);
+  src: url(./bundle/assets/fonts/ProximaNova-Bold.woff) format('woff');
+  src: url(./bundle/assets/fonts/ProximaNova-Bold.ttf) format('truetype');
 }
 
 .Belaz-b1 {
