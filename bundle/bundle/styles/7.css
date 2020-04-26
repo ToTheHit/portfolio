@@ -1,0 +1,872 @@
+.system-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 80%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+.system-info div {
+  font-size: 16px;
+  padding: 10px;
+}
+.system-info div:first-child {
+  border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+.gradient-test {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 0 10px;
+}
+.translucent-alert {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: -100px;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  -webkit-backdrop-filter: blur(20px) saturate(150%) brightness(100%);
+}
+@keyframes Pulse {
+  0% {
+    background: #f44336;
+  }
+  10% {
+    background: #e91e63;
+  }
+  20% {
+    background: #9c27b0;
+  }
+  30% {
+    background: #673ab7;
+  }
+  40% {
+    background: #2196f3;
+  }
+  50% {
+    background: #00bcd4;
+  }
+  60% {
+    background: #4caf50;
+  }
+  70% {
+    background: #ffeb3b;
+  }
+  80% {
+    background: #ff9800;
+  }
+  90% {
+    background: #ff5722;
+  }
+  100% {
+    background: #f44336;
+  }
+}
+.welcome-layout {
+  background: #F3F3F3;
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.welcome-layout--inner {
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0 3px 10px #EAEAEA;
+  padding: 20px !important;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .welcome-layout--inner {
+    padding: 24px 12px !important;
+    border-left: none;
+    border-right: none;
+  }
+}
+.welcome-layout.dark-theme .welcome-layout--inner {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  border-color: black;
+}
+.welcome-layout.dark-theme .Card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  border-color: black;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .welcome-layout {
+    padding: 0 !important;
+  }
+}
+.App {
+  transition: opacity 0.1s linear;
+}
+.granit {
+  min-width: 940px;
+  font-family: "GothamPro";
+  margin: 0 auto;
+  overflow-x: hidden;
+  transition: opacity 0.5s linear;
+}
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 400;
+  src: url(/bundleassets/fonts/GothamPro.eot);
+  src: url(/bundleassets/fonts/GothamPro.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 700;
+  src: url(/bundleassets/fonts/GothamPro-Bold.eot);
+  src: url(/bundleassets/fonts/GothamPro-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 300;
+  src: url(/bundleassets/fonts/GothamPro-Light.eot);
+  src: url(/bundleassets/fonts/GothamPro-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 500;
+  src: url(/bundleassets/fonts/GothamPro-Medium.eot);
+  src: url(/bundleassets/fonts/GothamPro-Medium.ttf) format("truetype");
+}
+
+.granit-b1_l1 {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px auto 24px auto;
+  width: 940px;
+}
+.granit-b1_l1--call {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.granit-b1_l1--call_number {
+  flex-direction: column;
+  padding-top: 0px;
+}
+.granit-b1_l1--call_number_telephone {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: right;
+  color: #292929;
+}
+.granit-b1_l1--call_number_text {
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #969696;
+}
+.granit-b1_l1--call_button {
+  width: 157px;
+  height: 36px;
+  border: solid 2px #292929;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 36px;
+  margin-left: 29px;
+  margin-top: -6px;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #292929;
+}
+.granit-b1_l1--call_button:hover {
+  cursor: pointer;
+}
+.granit-b1_l2 {
+  width: 940px;
+  height: 60px;
+  background-color: #ffcc00;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.granit-b1_l2-button {
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  transition: 0.1s linear;
+}
+.granit-b1_l2-button:hover {
+  cursor: pointer;
+  background-color: #ffb100;
+}
+
+.granit-b1_l1--logo_picture {
+  float: left;
+  width: 38px;
+  height: 40px;
+  background-size: contain;
+}
+.granit-b1_l1--logo_text {
+  float: left;
+  margin-left: 11px;
+}
+.granit-b1_l1--logo_text_title {
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #292929;
+  text-transform: uppercase;
+}
+.granit-b1_l1--logo_text_about {
+  font-size: 11px;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: left;
+  margin-left: 2px;
+  color: #969696;
+}
+
+.granit-b2 {
+  max-width: 100%;
+  height: 550px;
+  background-size: cover;
+  margin-top: -30px;
+}
+.granit-b2_content {
+  margin: 0 auto;
+  width: 940px;
+}
+.granit-b2_content--title {
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 164px;
+  margin-left: -1px;
+}
+.granit-b2_content--text {
+  margin-top: 33px;
+  width: 250px;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.granit-b2_content--linkLine {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.granit-b2_content--linkLine_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #ffd200;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: right;
+  color: #0d0d0d;
+}
+.granit-b2_content--linkLine_button:hover {
+  cursor: pointer;
+}
+.granit-b2_content--linkLine_or {
+  margin-left: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.granit-b2_content--linkLine_catalog {
+  margin-left: 13px;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.granit-b2_content--linkLine_catalog:hover {
+  cursor: pointer;
+}
+
+.granit-b3 {
+  width: 940px;
+  height: 707px;
+  margin: 0 auto;
+  text-align: center;
+}
+.granit-b3--title {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #292929;
+  text-transform: uppercase;
+  padding-top: 76px;
+}
+.granit-b3--line {
+  display: flex;
+  margin-top: 58px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.granit-b3--line_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #f6f6f6;
+  width: 296px;
+}
+.granit-b3--line_item-picture {
+  width: 300px;
+  height: 200px;
+  margin-top: -1px;
+  background-size: cover;
+}
+.granit-b3--line_item-title {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #292929;
+  text-decoration: underline;
+  text-decoration-color: #6C8096;
+  margin-top: 13px;
+}
+.granit-b3--line_item-description {
+  margin-top: 19px;
+  width: 230px;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 15px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #626262;
+}
+.granit-b3--line_item-cost {
+  margin-top: 27px;
+  margin-left: -5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0f0f0f;
+}
+.granit-b3--line_item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  background-color: #ffd200;
+  margin-top: 32px;
+  margin-bottom: 34px;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d0d0d;
+}
+.granit-b3--line_item-button:hover {
+  cursor: pointer;
+}
+
+.granit-b4 {
+  height: 490px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.granit-b4--title {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #292929;
+  text-transform: uppercase;
+  padding-top: 76px;
+}
+.granit-b4--line {
+  display: flex;
+  width: 940px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 60px auto 0 auto;
+}
+
+.granit-b4--line_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px #ffffff;
+  width: 300px;
+  height: 253px;
+  background-color: #f4f4f4;
+  transition: background-color 0.5s ease;
+}
+.granit-b4--line_item:hover {
+  box-shadow: 0px 9px 21px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+.granit-b4--line_item-picture {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.granit-b4--line_item-title {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+}
+.granit-b4--line_item-description {
+  margin-top: 14px;
+  width: 250px;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #292929;
+}
+
+.granit-b5 {
+  width: 940px;
+  height: 593px;
+  margin: 0 auto;
+  text-align: center;
+}
+.granit-b5--title {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #292929;
+  text-transform: uppercase;
+  padding-top: 76px;
+}
+.granit-b5--line {
+  display: flex;
+  margin-top: 58px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.granit-b5--line_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #f6f6f6;
+  width: 220px;
+}
+.granit-b5--line_item-picture {
+  width: 180px;
+  height: 155px;
+  margin: 18px 20px 20px 20px;
+  background-size: cover;
+}
+.granit-b5--line_item-picture_sale {
+  width: 55px;
+  height: 23px;
+  background-color: #ff0000;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 23px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.granit-b5--line_item-title {
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #292929;
+  text-decoration: underline;
+  text-decoration-color: #6C8096;
+}
+.granit-b5--line_item-cost {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+.granit-b5--line_item-cost_old {
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #979797;
+}
+.granit-b5--line_item-cost_new {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ff0000;
+  margin-left: 14px;
+}
+.granit-b5--line_item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  background-color: #ffd200;
+  margin-top: 25px;
+  margin-bottom: 34px;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d0d0d;
+}
+.granit-b5--line_item-button:hover {
+  cursor: pointer;
+}
+
+.granit-b6 {
+  height: 492px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.granit-b6--title {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #292929;
+  text-transform: uppercase;
+  padding-top: 76px;
+}
+.granit-b6--line {
+  display: flex;
+  width: 940px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 60px auto 0 auto;
+}
+
+.granit-b6--line_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px #ffffff;
+  width: 300px;
+  height: 253px;
+  background-color: #f4f4f4;
+  transition: background-color 0.5s ease;
+}
+.granit-b6--line_item:hover {
+  box-shadow: 0px 9px 21px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+.granit-b6--line_item-picture {
+  width: 250px;
+  height: 125px;
+  background-size: cover;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.granit-b6--line_item-title {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+  text-decoration: underline;
+  text-decoration-color: #6C8096;
+}
+
+.granit-b7 {
+  height: 520px;
+  max-width: 100%;
+  background-size: cover;
+}
+.granit-b7--content {
+  margin: 0 auto;
+  width: 940px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.granit-b7--content_mark {
+  width: 28px;
+  height: 42px;
+  fill: #ffd200;
+  margin-left: 120px;
+  margin-bottom: 23px;
+}
+.granit-b7--content_contacts {
+  width: 380px;
+  height: 360px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.granit-b7--content_contacts_content {
+  padding-left: 60px;
+  padding-top: 55px;
+  padding-right: 70px;
+}
+.granit-b7--content_contacts_content--title {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+  text-transform: uppercase;
+}
+.granit-b7--content_contacts_content--phone {
+  margin-top: 47px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+}
+.granit-b7--content_contacts_content--phone_icon {
+  width: 12px;
+  height: 12px;
+  margin-top: -2px;
+}
+.granit-b7--content_contacts_content--phone_numbers {
+  margin-left: 17px;
+  margin-top: -3px;
+}
+.granit-b7--content_contacts_content--phone_numbers_second {
+  margin-top: 11px;
+}
+.granit-b7--content_contacts_content--address {
+  margin-top: 33px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+  line-height: 18px;
+}
+.granit-b7--content_contacts_content--address_icon {
+  width: 18px;
+  height: 15px;
+}
+.granit-b7--content_contacts_content--address_text {
+  margin-left: 17px;
+  margin-top: -3px;
+}
+.granit-b7--content_contacts_content--mail {
+  margin-top: 37px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+  line-height: 18px;
+}
+.granit-b7--content_contacts_content--mail_icon {
+  width: 14px;
+  height: 10px;
+  margin-top: -2px;
+}
+.granit-b7--content_contacts_content--mail_text {
+  margin-left: 17px;
+  margin-top: -3px;
+  text-decoration: underline;
+  text-decoration-color: #6C8096;
+  color: black;
+}
+
+.granit-b8 {
+  background-color: #292929;
+  height: 196px;
+}
+.granit-b8--content {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+}
+.granit-b8--content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.granit-b8--content-left_text {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.granit-b8--content-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.granit-b8--content-right_telephone {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+}
+.granit-b8--content-right_text {
+  margin-top: -2px;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+}
+.granit-b8--content-right_button {
+  width: 157px;
+  height: 36px;
+  margin-top: 24px;
+  border: solid 2px #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: center;
+  line-height: 36px;
+}
+.granit-b8--content-right_button:hover {
+  cursor: pointer;
+}
+
