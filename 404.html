@@ -41,13 +41,13 @@
       // then set segmentCount to 1 (enterprise users may need to set it to > 1).
       // let segmentCount = 1;
       // If you are developing locally, then set isDevVersion to "true"
-      // let isDevVesrion = false;
+      let isDevVesrion1 = false;
 
       let l1 = window.location;
       let mainBundlePath1 = l1.protocol + '//' + l1.hostname + (l1.port ? ':' + l1.port : '') + l1.pathname.split('/').slice(0, 1 + segmentCount).join('/');
       let mainBundleScript1 = document.createElement('script');
-      console.log( mainBundlePath1 + (isDevVesrion ? '' : '/bundle/') + '/main.bundle.js');
-      mainBundleScript1.src = mainBundlePath1 + (isDevVesrion ? '' : '/bundle/') + '/main.bundle.js';
+      console.log( mainBundlePath1 + (isDevVesrion1 ? '' : '/bundle/') + '/main.bundle.js');
+      mainBundleScript1.src = mainBundlePath1 + (isDevVesrion1 ? '' : '/bundle/') + '/main.bundle.js';
 
       document.head.appendChild(mainBundleScript1);
     </script>
