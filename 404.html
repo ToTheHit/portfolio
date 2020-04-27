@@ -43,13 +43,13 @@
       // If you are developing locally, then set isDevVersion to "true"
       // let isDevVesrion = false;
 
-      // let l = window.location;
-      // let mainBundlePath = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + l.pathname.split('/').slice(0, 1 + segmentCount).join('/');
-      // let mainBundleScript = document.createElement('script');
-      console.log( mainBundlePath + (isDevVesrion ? '' : '/bundle/') + '/main.bundle.js');
-      mainBundleScript.src = mainBundlePath + (isDevVesrion ? '' : '/bundle/') + '/main.bundle.js';
+      let l1 = window.location;
+      let mainBundlePath1 = l1.protocol + '//' + l1.hostname + (l1.port ? ':' + l1.port : '') + l1.pathname.split('/').slice(0, 1 + segmentCount).join('/');
+      let mainBundleScript1 = document.createElement('script');
+      console.log( mainBundlePath1 + (isDevVesrion ? '' : '/bundle/') + '/main.bundle.js');
+      mainBundleScript1.src = mainBundlePath1 + (isDevVesrion ? '' : '/bundle/') + '/main.bundle.js';
 
-      document.head.appendChild(mainBundleScript);
+      document.head.appendChild(mainBundleScript1);
     </script>
 </head>
 <body>
