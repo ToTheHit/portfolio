@@ -70,73 +70,73 @@ code {
 @font-face {
   font-family: "SF Pro Display";
   font-weight: 600;
-  src: url(./2/assets/fonts/SFProDisplay-Semibold.eot);
-  src: url(./2/assets/fonts/SFProDisplay-Semibold.ttf) format("truetype");
+  src: url(./bundle/SFProDisplay-Semibold.eot);
+  src: url(./bundle/SFProDisplay-Semibold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'SF Pro Display';
   font-weight: 700;
-  src: url(./2/assets/fonts/SFProDisplay-Bold.eot);
-  src: url(./2/assets/fonts/SFProDisplay-Bold.ttf) format("truetype");
+  src: url(./bundle/SFProDisplay-Bold.eot);
+  src: url(./bundle/SFProDisplay-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'SF Pro Text';
   font-weight: 400;
-  src: url(./2/assets/fonts/SF-Pro-Text-Regular.otf) format("opentype");
+  src: url(./bundle/SF-Pro-Text-Regular.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'SF Pro Text';
   font-weight: 500;
-  src: url(./2/assets/fonts/SF-Pro-Text-Medium.otf) format("opentype");
+  src: url(./bundle/SF-Pro-Text-Medium.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'SF Pro Text';
   font-weight: 600;
-  src: url(./2/assets/fonts/SF-Pro-Text-Semibold.otf) format("opentype");
+  src: url(./bundle/SF-Pro-Text-Semibold.otf) format("opentype");
 }
 
 @font-face {
   font-family: "SF Pro Text";
   font-weight: 700;
-  src: url(./2/assets/fonts/SF-Pro-Text-Bold.otf) format("opentype");
+  src: url(./bundle/SF-Pro-Text-Bold.otf) format("opentype");
 }
 
 /* DEPRECATED in the next update. */
 
 @font-face {
   font-family: "IBSF Pro Display Bold";
-  src: url(./2/assets/fonts/SFProDisplay-Bold.eot);
-  src: url(./2/assets/fonts/SFProDisplay-Bold.ttf) format("truetype");
+  src: url(./bundle/SFProDisplay-Bold.eot);
+  src: url(./bundle/SFProDisplay-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "IBSF Pro Display Semibold";
-  src: url(./2/assets/fonts/SFProDisplay-Semibold.eot);
-  src: url(./2/assets/fonts/SFProDisplay-Semibold.ttf) format("truetype");
+  src: url(./bundle/SFProDisplay-Semibold.eot);
+  src: url(./bundle/SFProDisplay-Semibold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "IBSF Pro Text Regular";
-  src: url(./2/assets/fonts/SF-Pro-Text-Regular.otf) format("opentype");
+  src: url(./bundle/SF-Pro-Text-Regular.otf) format("opentype");
 }
 
 @font-face {
   font-family: "IBSF Pro Text Semibold";
-  src: url(./2/assets/fonts/SF-Pro-Text-Semibold.otf) format("opentype");
+  src: url(./bundle/SF-Pro-Text-Semibold.otf) format("opentype");
 }
 
 @font-face {
   font-family: "IBSF Pro Text Bold";
-  src: url(./2/assets/fonts/SF-Pro-Text-Bold.otf) format("opentype");
+  src: url(./bundle/SF-Pro-Text-Bold.otf) format("opentype");
 }
 
 @font-face {
   font-family: "IBSF Pro Text Medium";
-  src: url(./2/assets/fonts/SF-Pro-Text-Medium.otf) format("opentype");
+  src: url(./bundle/SF-Pro-Text-Medium.otf) format("opentype");
 }
 
 /* Gradients */
