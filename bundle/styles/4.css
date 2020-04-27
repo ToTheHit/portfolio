@@ -138,33 +138,33 @@ button {
   font-family: "ProximaNove";
   font-weight: 300;
   font-style: normal;
-  src: url(./bundle/ProximaNova-Light.eot);
-  src: url(./bundle/ProximaNova-Light.woff) format('woff');
-  src: url(./bundle/ProximaNova-Light.ttf) format('truetype');
+  src: url(../assets/fonts/ProximaNova-Light.eot);
+  src: url(../assets/fonts/ProximaNova-Light.woff) format('woff');
+  src: url(../assets/fonts/ProximaNova-Light.ttf) format('truetype');
 }
 @font-face {
   font-family: "ProximaNove";
   font-weight: normal;
   font-style: normal;
-  src: url(./bundle/ProximaNova-Regular.eot);
-  src: url(./bundle/ProximaNova-Regular.woff) format('woff');
-  src: url(./bundle/ProximaNova-Regular.ttf) format('truetype');
+  src: url(../assets/fonts/ProximaNova-Regular.eot);
+  src: url(../assets/fonts/ProximaNova-Regular.woff) format('woff');
+  src: url(../assets/fonts/ProximaNova-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: "ProximaNove";
   font-weight: 800;
   font-style: normal;
-  src: url(./bundle/ProximaNova-Extrabold.eot);
-  src: url(./bundle/ProximaNova-Extrabold.woff) format('woff');
-  src: url(./bundle/ProximaNova-Extrabold.ttf) format('truetype');
+  src: url(../assets/fonts/ProximaNova-Extrabold.eot);
+  src: url(../assets/fonts/ProximaNova-Extrabold.woff) format('woff');
+  src: url(../assets/fonts/ProximaNova-Extrabold.ttf) format('truetype');
 }
 @font-face {
   font-family: "ProximaNove";
   font-weight: bold;
   font-style: normal;
-  src: url(./bundle/ProximaNova-Bold.eot);
-  src: url(./bundle/ProximaNova-Bold.woff) format('woff');
-  src: url(./bundle/ProximaNova-Bold.ttf) format('truetype');
+  src: url(../assets/fonts/ProximaNova-Bold.eot);
+  src: url(../assets/fonts/ProximaNova-Bold.woff) format('woff');
+  src: url(../assets/fonts/ProximaNova-Bold.ttf) format('truetype');
 }
 
 .advogrand-b1 {
