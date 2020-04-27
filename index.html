@@ -70,12 +70,13 @@
 <!--  <script type="text/javascript" src="/main.bundle.js"></script>-->
 <script>
   let segmentCount = 1;
+  let isDevVesrion = false;
 
   let l = window.location;
   let mainBundlePath = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + l.pathname.split('/').slice(0, 1 + segmentCount).join('/');
   console.log(mainBundlePath);
   let mainBundleScript = document.createElement('script');
-  mainBundleScript.src = mainBundlePath + '/main.bundle.js';
+  mainBundleScript.src = mainBundlePath + (isDevVesrion ? '' : '/bundle/') + '/main.bundle.js';
 
   document.head.appendChild(mainBundleScript);
 </script>
