@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: `${path.resolve(__dirname, 'dist')}/bundle/`,
-    publicPath: '/',
+    publicPath: './bundle/',
     filename: '[name].bundle.js',
     chunkFilename: '[name].bundle.js',
   },
@@ -34,6 +34,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
+              publicPath: '../assets/fonts/',
               outputPath: 'assets/fonts/',
             },
           },
@@ -42,7 +43,7 @@ module.exports = {
       {
         test: /\.(svg)(\?[a-z0-9=&.]+)?$/,
         use: [{
-          loader: '@svgr/webpack'
+          loader: '@svgr/webpack',
         },
         ],
       },

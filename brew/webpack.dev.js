@@ -5,6 +5,9 @@ const common = require('./webpack.config');
 
 module.exports = merge(common, {
   mode: 'development',
+  output: {
+    publicPath: '/',
+  },
   devServer: {
     contentBase: './dist',
     allowedHosts: [

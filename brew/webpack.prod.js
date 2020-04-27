@@ -2,14 +2,17 @@ const merge = require('webpack-merge');
 const webpack = require('webpack');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-const extractLESS = new ExtractTextPlugin('stylesheets/[name]-two.css');
 
 const common = require('./webpack.config.js');
 
+// Paste here part of Github Pages URL after github.io/
+const page = 'portfolio';
+
 module.exports = merge(common, {
   mode: 'production',
+  output: {
+    publicPath: './bundle/',
+  },
   module: {
     rules: [
       {
@@ -36,7 +39,7 @@ module.exports = merge(common, {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        PUBLIC_URL: JSON.stringify(''), // Paste here part of Github Pages URL after /
+        PUBLIC_URL: JSON.stringify(`${page}`),
       },
     }),
   ],

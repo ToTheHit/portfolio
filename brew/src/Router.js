@@ -2,6 +2,7 @@ import React, { Component, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 
 import './index.css';
+import Page404 from "./Pages/Page404/Page404";
 // import App from "./Pages/Main/App";
 // import Granit from "./Pages/Granit/Granit";
 /*import BodyShop from "./Pages/BodyShop/BodyShop";
@@ -57,18 +58,20 @@ class AppRouter extends Component {
             })}
             {routes.map(({ path, Component }) => (
               <Route key={path} exact path={path}>
-                {({ match }) => (
-                  <Component />
-                )}
+                {({ match }) => {
+                  return <Component />
+                }}
               </Route>
             ))}
 
-            <Route path={'/404'}>
+{/*            <Route path={'/404'}>
               <div>404</div>
             </Route>
             <Route>
               <Redirect to="/404" />
-            </Route>
+            </Route>*/}
+
+            <Route component={Page404}/>
           </Switch>
         </Suspense>
       </Router>
