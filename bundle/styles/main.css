@@ -23,21 +23,67 @@ code {
   position: relative;
 }
 
+.GithubLogo {
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  z-index: 99;
+  top: 0;
+  right: 0;
+}
+main {
+  width: 100%;
+}
 
-.item-enter {
-  opacity: 0;
+/* Parallax */
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
 }
-.item-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
+
+.parallax {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  /*background-size: 100%;*/
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.item-exit {
-  opacity: 1;
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
 }
-.item-exit-active {
-  opacity: 0;
-  transition: opacity 500ms ease-in;
-}
+
+/* Parallax end */
 
 :root {
   --font-common: -apple-system, BlinkMacSystemFont,"Noto Sans", Helvetica Neue, Arial;
@@ -250,95 +296,5 @@ div#root {
    opacity: 0;
    pointer-events: none;
 }*/
-
-
-
-/*h1 {
-  font-family: var(--display-text);
-  color: #000000;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-}
-
-h2 {
-  font-family: var(--common-text);
-  color: #000000;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-h3 {
-  font-family: var(--common-text);
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 700;
-}
-
-h4 {
-  font-family: var(--common-text);
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 700;
-}*/
-/*
-
-h4.category {
-  font-family: var(--common-text), "Noto Sans";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-h4.subtitle-1 {
-  font-size: 14px;
-  font-family: var(--common-text);
-  text-transform: uppercase;
-  line-height: 18px;
-  font-weight: 500;
-}
-
-h4.subtitle-2 {
-  font-size: 14px;
-  font-family: var(--common-text);
-  font-weight: 500;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--subtitle-second-color);
-}
-
-h4.caption-1 {
-  font-size: 13px;
-  line-height: 18px;
-  font-family: var(--common-text);
-  font-weight: 600;
-  color: var(--caption-color);
-}
-
-h4.caption-2 {
-  font-size: 12px;
-  line-height: 18px;
-  font-family: var(--common-text);
-  font-weight: 600;
-  color: var(--caption-color);
-}
-*/
-/*
-
-p {
-  font-family: var(--common-text), "Noto Sans";
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-p > b, strong {
-  font-family: var(--bold-text);
-  font-size: inherit;
-  font-weight: 700;
-}
-*/
-
 
 

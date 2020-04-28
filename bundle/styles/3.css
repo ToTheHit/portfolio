@@ -13,6 +13,13 @@
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
 .gradient-test {
   width: 30px;
   height: 30px;
@@ -119,7 +126,7 @@
   align-items: center;
   font-family: Roboto, sans-serif;
   transition: opacity 2s linear;
-  min-width: 1200px;
+  min-width: 1300px;
 }
 .ThreeDModeling .content {
   width: 1140px;
@@ -181,6 +188,8 @@
 .ThreeDModeling-s1_call {
   color: #FFFFFF;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ThreeDModeling-s1_call--phone {
   width: 28px;
@@ -1086,6 +1095,8 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .ThreeDModeling-s12--navLink:nth-child(2n) {
   margin: 0 75px;

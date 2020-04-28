@@ -13,6 +13,13 @@
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
 .gradient-test {
   width: 30px;
   height: 30px;

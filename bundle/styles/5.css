@@ -13,6 +13,13 @@
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
 .gradient-test {
   width: 30px;
   height: 30px;
@@ -120,14 +127,21 @@
   line-height: normal;
   letter-spacing: normal;
   transition: opacity 0.5s linear;
+  /*  h2 {
+    font-family: "Lato", sans-serif;
+    color: #353738;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    line-height: normal;
+  }*/
 }
 .Bicycle h1 {
-  font-family: "Lato", sans-serif;
-  color: #353738;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-  line-height: normal;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
 }
 .Bicycle .title {
   margin-top: 35px !important;
@@ -256,6 +270,13 @@
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
 .gradient-test {
   width: 30px;
   height: 30px;
@@ -356,9 +377,6 @@
 }
 .Bicycle-b1 {
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 .Bicycle-b1__background {
@@ -501,6 +519,13 @@
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
 .gradient-test {
   width: 30px;
   height: 30px;
@@ -631,6 +656,13 @@
 }
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
 }
 .gradient-test {
   width: 30px;
@@ -793,6 +825,13 @@
 }
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
 }
 .gradient-test {
   width: 30px;
@@ -988,6 +1027,13 @@
 }
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
 }
 .gradient-test {
   width: 30px;
@@ -1202,6 +1248,13 @@
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
 .gradient-test {
   width: 30px;
   height: 30px;
@@ -1410,6 +1463,13 @@
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
 .gradient-test {
   width: 30px;
   height: 30px;
@@ -1509,7 +1569,7 @@
   transition: opacity 0.1s linear;
 }
 .Bicycle-b6 {
-  height: 469px;
+  min-height: 469px;
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
@@ -1524,8 +1584,8 @@
   display: none !important;
 }
 .Bicycle-b6__slider .slick-dots {
-  bottom: -100px;
-  left: 0;
+  margin-top: 25px;
+  position: relative;
 }
 .Bicycle-b6__slider .slick-dots .slick-active button:before {
   background-color: #a9afb3;
@@ -1539,10 +1599,10 @@
 }
 @media (max-width: 768px) {
   .Bicycle-b6 {
-    height: 430px;
+    min-height: 430px;
   }
   .Bicycle-b6__slider {
-    padding: 0 25px 25px 25px;
+    padding: 25px;
   }
   .Bicycle-b6__slider .slick-dots {
     bottom: -50px;
@@ -1607,6 +1667,13 @@
 }
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
 }
 .gradient-test {
   width: 30px;
@@ -1878,6 +1945,13 @@
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
 .gradient-test {
   width: 30px;
   height: 30px;
@@ -2056,6 +2130,13 @@
 }
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
 }
 .gradient-test {
   width: 30px;
@@ -2241,6 +2322,13 @@
 }
 .system-info div:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+.AppHeader-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
 }
 .gradient-test {
   width: 30px;
