@@ -50,11 +50,12 @@ const Bicycle = () => {
   }, []);
 
   return (
-    <div className={classNames('Bicycle', { hidden })}>
+    <div className={classNames('Bicycle', { hidden }, 'wrapper')}>
       <Block_1
         setScrollTo={setScrollTo}
       />
       <main>
+        <h1>Bicycle</h1>
         <Block_2 ref={refAboutUs} />
         <Block_3 ref={refWork} />
         <Block_4 />

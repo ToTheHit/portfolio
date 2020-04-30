@@ -60,7 +60,7 @@ const Section_8 = () => {
   }, []);
 
   return (
-    <div className="ThreeDModeling-s8">
+    <section className="ThreeDModeling-s8">
       <ThreeDModelingTitle
         title="Наша команда"
       />
@@ -84,7 +84,7 @@ const Section_8 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

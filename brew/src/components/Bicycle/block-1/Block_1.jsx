@@ -11,8 +11,12 @@ const Block_1 = forwardRef((props, ref) => {
     <header
       className="Bicycle-b1"
       ref={ref}
-      style={{ backgroundImage: `url(${background})` }}
     >
+      <div
+        className="parallax"
+        style={{ backgroundImage: `url(${background})` }}
+      />
+
       <div className="Bicycle-b1__menu">
         <div className="Bicycle-b1__menu-left">
           <button

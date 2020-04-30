@@ -6,17 +6,17 @@ import Google from '../../../assets/ThreeDModeling/section-12/google-plus.svg';
 import Instagram from '../../../assets/ThreeDModeling/section-12/instagram.svg';
 
 const Section_12 = () => (
-  <footer className="ThreeDModeling-s12">
+  <footer className="ThreeDModeling-s12" role="contentinfo">
     <div className="content">
       <div className="ThreeDModeling-s12__row">
         <nav className="ThreeDModeling-s12__nav">
-          <div className="ThreeDModeling-s12--navLink">Главная</div>
-          <div className="ThreeDModeling-s12--navLink">Вопросы-ответы</div>
-          <div className="ThreeDModeling-s12--navLink">Новости</div>
-          <div className="break" />
-          <div className="ThreeDModeling-s12--navLink">Тарифы</div>
-          <div className="ThreeDModeling-s12--navLink">Личный кабинет</div>
-          <div className="ThreeDModeling-s12--navLink">Договор публичной оферты</div>
+          <a href="/3dmodeling" className="ThreeDModeling-s12--navLink">Главная</a>
+          <a href="/3dmodeling" className="ThreeDModeling-s12--navLink">Вопросы-ответы</a>
+          <a href="/3dmodeling" className="ThreeDModeling-s12--navLink">Новости</a>
+          <a href="/3dmodeling" className="break" />
+          <a href="/3dmodeling" className="ThreeDModeling-s12--navLink">Тарифы</a>
+          <a href="/3dmodeling" className="ThreeDModeling-s12--navLink">Личный кабинет</a>
+          <a href="/3dmodeling" className="ThreeDModeling-s12--navLink">Договор публичной оферты</a>
         </nav>
         <div className="ThreeDModeling-s12__social">
           Мы в социальных сетях:

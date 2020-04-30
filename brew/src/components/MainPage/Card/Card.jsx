@@ -15,7 +15,8 @@ class Card extends Component {
   }
 
   handleRedirect() {
-    this.props.changeHide(true);
+    const { changeHide } = this.props;
+    changeHide(true);
     setTimeout(() => {
       this.setState({ redirect: true });
     }, 0);
@@ -25,29 +26,32 @@ class Card extends Component {
     /*        if (this.state.redirect) {
                 return <Redirect to={this.props.link} push={true}/>
             } */
-
+    const {
+      link, pictureURL, title, description,
+    } = this.props;
     return (
       <Layout className="Card">
-        {/* <div to={this.props.link} style={{ textDecoration: 'none' }} onClick={() => this.handleRedirect()}> */}
+        {/* <div to={this.props.link} style={{ textDecoration: 'none' }}
+        onClick={() => this.handleRedirect()}> */}
         <NavLink
           style={{ textDecoration: 'none' }}
-          to={this.props.link}
+          to={link}
         >
           <div
             className="Card_picture"
-            style={{ backgroundImage: `url(${this.props.pictureURL})` }}
+            style={{ backgroundImage: `url(${pictureURL})` }}
           />
 
           <div className="Card_title">
-            <Title>
-              {this.props.title}
-            </Title>
+            <h2>
+              {title}
+            </h2>
           </div>
 
           <div className="Card_dot" />
           <div className="Card_description">
             <Paragraph>
-              {this.props.description}
+              {description}
             </Paragraph>
           </div>
         </NavLink>

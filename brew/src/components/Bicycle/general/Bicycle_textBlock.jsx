@@ -12,7 +12,7 @@ const BicycleTextBlock = (props) => {
         className="Bicycle-textBlock__icon"
         style={{ backgroundImage: `url(${icon})` }}
       />
-      <div className="Bicycle-textBlock__title">{title}</div>
+      <h2 className="Bicycle-textBlock__title">{title}</h2>
       <div className="Bicycle-textBlock__text" style={textStyle}>{text}</div>
       <div className="Bicycle-textBlock__line" />
     </div>

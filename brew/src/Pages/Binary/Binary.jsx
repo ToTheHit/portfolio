@@ -45,7 +45,7 @@ const Binary = () => {
   }, [scrollTo]);
 
   return (
-    <div className={classNames('Binary', { hidden })}>
+    <div className={classNames('Binary', { hidden }, 'wrapper')}>
       <Block_1
         ref={refHome}
         setScrollTo={setScrollTo}

@@ -8,7 +8,7 @@ import pic3 from '../../../assets/ThreeDModeling/section-6/pic3.jpg';
 import pic4 from '../../../assets/ThreeDModeling/section-6/pic4.jpg';
 
 const Section_6 = () => (
-  <div className="ThreeDModeling-s6">
+  <section className="ThreeDModeling-s6">
     <ThreeDModelingTitle
       title="Процесс взаимодействия"
     />
@@ -38,7 +38,7 @@ const Section_6 = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 Section_6.propTypes = {};

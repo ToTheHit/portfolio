@@ -10,9 +10,13 @@ const Block_1 = forwardRef((props, ref) => {
   return (
     <header
       className="Binary-b1"
-      style={{ backgroundImage: `url(${background})` }}
+      // style={{ backgroundImage: `url(${background})` }}
       ref={ref}
     >
+      <div
+        className="parallax"
+        style={{ backgroundImage: `url(${background})` }}
+      />
       <div className="Binary-b1__logo" style={{ backgroundImage: `url(${logo})` }} />
       <TextBlock
         title="Clear, smart, attractive design"

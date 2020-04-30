@@ -10,14 +10,15 @@ import pic6 from '../../../assets/ThreeDModeling/section-4/pic6.jpg';
 import classNames from '../../../lib/classNames';
 
 const Section_4 = () => {
-  const [activeRefButton, setActiveRefButton] = useState(null);
   const refButtonAll = useRef(null);
   const refButtonEx = useRef(null);
   const refButtonIn = useRef(null);
   const refButtonPublic = useRef(null);
+  const [activeRefButton, setActiveRefButton] = useState(refButtonAll);
+
 
   return (
-    <div className="ThreeDModeling-s4">
+    <section className="ThreeDModeling-s4">
       <ThreeDModelingTitle
         title="Портфолио"
       />
@@ -109,7 +110,7 @@ const Section_4 = () => {
           </picture>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

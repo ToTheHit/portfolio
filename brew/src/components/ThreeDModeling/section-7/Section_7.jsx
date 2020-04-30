@@ -11,7 +11,7 @@ import pic6 from '../../../assets/ThreeDModeling/section-7/pic6.png';
 import pic7 from '../../../assets/ThreeDModeling/section-7/pic7.png';
 
 const Section_7 = () => (
-  <div className="ThreeDModeling-s7">
+  <section className="ThreeDModeling-s7">
     <ThreeDModelingTitle
       title="Нам доверяют более 50 компаний"
     />
@@ -88,7 +88,7 @@ const Section_7 = () => (
         alt=""
       />
     </div>
-  </div>
+  </section>
 );
 
 Section_7.propTypes = {};

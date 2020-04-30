@@ -6,7 +6,7 @@ import pinterestIcon from '../../../assets/Bicycle/block-9/pinterest.png';
 import logo from '../../../assets/Bicycle/block-9/logo.png';
 
 const Block_10 = () => (
-  <footer className="Bicycle-b10">
+  <footer className="Bicycle-b10" role="contentinfo">
     <div className="Bicycle-b10__content">
       <div className="Bicycle-b10__content-left">
         <div className="Bicycle-b10__content-left_company">

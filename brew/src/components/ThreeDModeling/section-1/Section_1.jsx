@@ -7,6 +7,7 @@ import IconMouseDown from '../../../assets/ThreeDModeling/section-1/mouse_down.s
 
 const Section_1 = () => (
   <header className="ThreeDModeling-s1" style={{ backgroundImage: `url(${background})` }}>
+
     <div className="content">
       <div className="ThreeDModeling-s1_top">
         <h1 className="ThreeDModeling-s1_logo">

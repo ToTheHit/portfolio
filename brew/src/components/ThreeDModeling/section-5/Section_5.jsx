@@ -9,7 +9,7 @@ import pic5 from '../../../assets/ThreeDModeling/section-5/pic5.png';
 import pic6 from '../../../assets/ThreeDModeling/section-5/pic6.png';
 
 const Section_5 = () => (
-  <div className="ThreeDModeling-s5">
+  <section className="ThreeDModeling-s5">
     <ThreeDModelingTitle
       title="Почему мы лучшие?"
     />
@@ -117,7 +117,7 @@ const Section_5 = () => (
       </div>
     </div>
 
-  </div>
+  </section>
 );
 
 Section_5.propTypes = {};

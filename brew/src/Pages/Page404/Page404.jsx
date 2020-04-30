@@ -5,9 +5,9 @@ import './page404.less';
 
 const Page404 = () => (
   <div className="Page404">
-    <p>
-      Ooops... Error 404
-    </p>
+    <div className="Page404-text">
+      404
+    </div>
   </div>
 );
 

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-d
 
 import './index.css';
 import Page404 from "./Pages/Page404/Page404";
+import GithubLogo from './assets/Main/githubLogo.svg';
+import FadeIn from "./components/InstantBrew/FadeIn/FadeIn";
 // import App from "./Pages/Main/App";
 // import Granit from "./Pages/Granit/Granit";
 /*import BodyShop from "./Pages/BodyShop/BodyShop";
@@ -28,6 +30,19 @@ const ScrollToTop = () => {
 };
 
 const routes = [
+  { path: '/bicycle', Component: Bicycle },
+  { path: '/3dmodeling', Component: ThreeDModeling },
+  { path: '/binary', Component: Binary },
+  { path: '/idcard', Component: IDcard },
+  { path: '/bodyshop', Component: BodyShop },
+  { path: '/advogrand', Component: Advogrand },
+  { path: '/granit', Component: Granit },
+  { path: '/belaz', Component: Belaz },
+  { path: '/empty', Component: Empty }
+]
+
+/*
+const routes = [
   { path: '/bodyshop', Component: BodyShop },
   { path: '/granit', Component: Granit },
   { path: '/advogrand', Component: Advogrand },
@@ -38,17 +53,22 @@ const routes = [
   { path: '/idcard', Component: IDcard },
   { path: '/empty', Component: Empty }
 ]
+*/
 
 class AppRouter extends Component {
   render() {
     return (
       <Router basename={process.env.PUBLIC_URL}>
         <Suspense fallback={<div />}> {/*Заглушка пока грузится бандл и стили*/}
+          <a href={'https://github.com/ToTheHit/portfolio'} target="_blank">
+            <GithubLogo className="GithubLogo" />
+          </a>
           <Route component={ScrollToTop} />
-
           <Switch>
             <Route exact path={'/'}>
-              <App />
+              <FadeIn>
+                <App />
+              </FadeIn>
             </Route>
 
             {routes.map(({ path }) => {
@@ -59,19 +79,23 @@ class AppRouter extends Component {
             {routes.map(({ path, Component }) => (
               <Route key={path} exact path={path}>
                 {({ match }) => {
-                  return <Component />
+                  return (
+                    <FadeIn>
+                      <Component />
+                    </FadeIn>
+                  )
                 }}
               </Route>
             ))}
 
-{/*            <Route path={'/404'}>
+            {/*            <Route path={'/404'}>
               <div>404</div>
             </Route>
             <Route>
               <Redirect to="/404" />
             </Route>*/}
 
-            <Route component={Page404}/>
+            <Route component={Page404} />
           </Switch>
         </Suspense>
       </Router>

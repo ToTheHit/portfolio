@@ -1,7 +1,7 @@
 @import "../../../Pages/Main/app.less";
 
 .Bicycle-b6 {
-  height: 469px;
+  min-height: 469px;
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
@@ -14,8 +14,8 @@
       display: none !important;
     }
     .slick-dots {
-      bottom: -100px;
-      left: 0;
+      margin-top: 25px;
+      position: relative;
 
       .slick-active button:before{
         background-color: #a9afb3;
@@ -33,9 +33,9 @@
   }
 
   @media (max-width: @media-width[tablet]) {
-    height: 430px;
+    min-height: 430px;
     &__slider {
-      padding: 0 25px 25px 25px;
+      padding: 25px;
       .slick-dots {
         bottom: -50px;
       }

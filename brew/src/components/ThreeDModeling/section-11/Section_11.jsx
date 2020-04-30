@@ -1,17 +1,22 @@
 import React from 'react';
 import './section_11.less';
-
+import { isMobile } from 'react-device-detect';
 import {
   GeoObject, Map, YMaps, ZoomControl,
 } from 'react-yandex-maps';
 
+
 const Section_11 = () => (
-  <div className="ThreeDModeling-s11">
+  <section className="ThreeDModeling-s11">
     <YMaps>
       <Map
         width="100%"
         height="600px"
-        defaultState={{ center: [43.238108, 76.945540], zoom: 14 }}
+        defaultState={{
+          center: [43.238108, 76.945540],
+          zoom: 14,
+        }}
+        instanceRef={(ref) => { isMobile && ref.behaviors.disable(['scrollZoom', 'drag']); }}
       >
         <GeoObject
           geometry={{
@@ -28,7 +33,7 @@ const Section_11 = () => (
         <ZoomControl options={{ float: 'right' }} />
       </Map>
     </YMaps>
-  </div>
+  </section>
 );
 
 Section_11.propTypes = {};

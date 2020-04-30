@@ -10,14 +10,23 @@
   letter-spacing: normal;
   transition: opacity @transition-time[medium] linear;
 
+
   h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+/*  h2 {
     font-family: "Lato", sans-serif;
     color: #353738;
     font-size: 18px;
     font-weight: bold;
     margin: 0;
     line-height: normal;
-  }
+  }*/
 
   .title {
     margin-top: 35px !important;
@@ -30,7 +39,9 @@
 
     }
   }
+
 }
+
 
 /* lato-100italic - latin */
 @font-face {

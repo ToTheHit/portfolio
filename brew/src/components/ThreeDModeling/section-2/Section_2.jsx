@@ -6,7 +6,7 @@ import pic2 from '../../../assets/ThreeDModeling/section-2/pic2.jpg';
 import pic3 from '../../../assets/ThreeDModeling/section-2/pic3.jpg';
 
 const Section_2 = () => (
-  <div className="ThreeDModeling-s2">
+  <section className="ThreeDModeling-s2">
     <ThreeDModelingTitle
       title="Наши услуги"
     />
@@ -67,7 +67,7 @@ const Section_2 = () => (
         </picture>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 Section_2.propTypes = {};

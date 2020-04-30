@@ -11,7 +11,7 @@ const Section_3 = () => {
 
 
   return (
-    <div className="ThreeDModeling-s3" style={{ backgroundImage: `url(${background})` }}>
+    <section className="ThreeDModeling-s3" style={{ backgroundImage: `url(${background})` }}>
       <ThreeDModelingTitle
         title="Расчитать стоимость"
         subtitle="Расчитайте предварительную стоимость разработки интерьера"
@@ -66,43 +66,44 @@ const Section_3 = () => {
               >
                 <label
                   className={classNames('ThreeDModeling-s3_left--buttonContainer', { 'ThreeDModeling-s3_left--buttonContainer-checked': config === 'light' })}
-                  htmlFor="option"
                   onMouseEnter={() => setVisibleDescription('light')}
                   onMouseLeave={() => setVisibleDescription('')}
                 >
                   <input
                     type="radio"
-                    name="option"
                     value="light"
+                    checked={config === 'light'}
                     onFocus={() => setVisibleDescription('light')}
                     onBlur={() => setVisibleDescription('')}
+                    onChange={() => {}}
                   />
                   <div className="form__type">Light</div>
                   <div className={classNames('ThreeDModeling-s3_left--buttonContainer__description', { 'ThreeDModeling-s3_left--buttonContainer__description-visible': visibleDesctiprion === 'light' })}>
                     <div className="ThreeDModeling-s3_left__content">
-                      {/* eslint-disable-next-line max-len */}
-                      План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
+                      План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов,
+                      план потолка, развертки по стенам, план электросетей)
                     </div>
                   </div>
                 </label>
+
                 <label
                   className={classNames('ThreeDModeling-s3_left--buttonContainer', { 'ThreeDModeling-s3_left--buttonContainer-checked': config === 'medium' })}
                   onMouseEnter={() => setVisibleDescription('medium')}
                   onMouseLeave={() => setVisibleDescription('')}
-                  htmlFor="option"
                 >
                   <input
                     type="radio"
-                    name="option"
                     value="medium"
+                    checked={config === 'medium'}
                     onFocus={() => setVisibleDescription('medium')}
                     onBlur={() => setVisibleDescription('')}
+                    onChange={() => {}}
                   />
                   <div className="form__type">Medium</div>
                   <div className={classNames('ThreeDModeling-s3_left--buttonContainer__description', { 'ThreeDModeling-s3_left--buttonContainer__description-visible': visibleDesctiprion === 'medium' })}>
                     <div className="ThreeDModeling-s3_left__content">
-                      {/* eslint-disable-next-line max-len */}
-                      План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
+                      План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов,
+                      план потолка, развертки по стенам, план электросетей)
                     </div>
                   </div>
                 </label>
@@ -110,20 +111,20 @@ const Section_3 = () => {
                   className={classNames('ThreeDModeling-s3_left--buttonContainer', { 'ThreeDModeling-s3_left--buttonContainer-checked': config === 'full' })}
                   onMouseEnter={() => setVisibleDescription('full')}
                   onMouseLeave={() => setVisibleDescription('')}
-                  htmlFor="option"
                 >
                   <input
                     type="radio"
-                    name="option"
                     value="full"
+                    checked={config === 'full'}
                     onFocus={() => setVisibleDescription('full')}
                     onBlur={() => setVisibleDescription('')}
+                    onChange={() => {}}
                   />
                   <div className="form__type">Full</div>
                   <div className={classNames('ThreeDModeling-s3_left--buttonContainer__description', { 'ThreeDModeling-s3_left--buttonContainer__description-visible': visibleDesctiprion === 'full' })}>
                     <div className="ThreeDModeling-s3_left__content">
-                      {/* eslint-disable-next-line max-len */}
-                      План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
+                      План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов,
+                      план потолка, р азвертки по стенам, план электросетей)
                     </div>
                   </div>
                 </label>
@@ -169,7 +170,7 @@ const Section_3 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

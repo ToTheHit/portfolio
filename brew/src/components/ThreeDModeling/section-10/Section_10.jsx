@@ -10,7 +10,7 @@ import TelegramIcon from '../../../assets/ThreeDModeling/section-10/telegram.svg
 import WhatsappIcon from '../../../assets/ThreeDModeling/section-10/whatsapp.svg';
 
 const Section_10 = () => (
-  <div className="ThreeDModeling-s10" style={{ backgroundImage: `url(${background})` }}>
+  <section className="ThreeDModeling-s10" style={{ backgroundImage: `url(${background})` }}>
     <ThreeDModelingTitle
       title="Остались вопросы?"
       subtitle="Задайти их в форме ниже и наши специалисты свяжуться с Вами!"
@@ -96,7 +96,7 @@ const Section_10 = () => (
       </div>
     </div>
 
-  </div>
+  </section>
 );
 
 Section_10.propTypes = {};

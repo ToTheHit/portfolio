@@ -6,7 +6,7 @@ import photo1 from '../../../assets/ThreeDModeling/section-9/pic1.jpg';
 import photo2 from '../../../assets/ThreeDModeling/section-9/pic2.jpg';
 
 const Section_9 = () => (
-  <div className="ThreeDModeling-s9">
+  <section className="ThreeDModeling-s9">
     <ThreeDModelingTitle
       title="Блог"
     />
@@ -28,7 +28,7 @@ const Section_9 = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 Section_9.propTypes = {};
