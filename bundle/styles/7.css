@@ -119,7 +119,7 @@
   transition: opacity 0.1s linear;
 }
 .granit {
-  min-width: 940px;
+  min-width: 1040px;
   font-family: "GothamPro";
   margin: 0 auto;
   overflow-x: hidden;

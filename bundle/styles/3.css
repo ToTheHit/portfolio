@@ -126,13 +126,14 @@
   align-items: center;
   font-family: Roboto, sans-serif;
   transition: opacity 2s linear;
-  min-width: 1300px;
+  min-width: 1400px;
 }
 .ThreeDModeling .content {
   width: 1140px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 .ThreeDModeling_input-type1 {
   width: 290px;
@@ -959,6 +960,7 @@
 .ThreeDModeling-s10 {
   width: 100%;
   min-height: 530px;
+  background-size: cover;
 }
 .ThreeDModeling-s10 .ThreeDModeling_title {
   color: #FFFFFF;
