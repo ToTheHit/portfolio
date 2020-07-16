@@ -77,7 +77,7 @@
     let l = window.location;
     let mainBundlePath = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + l.pathname.split('/').slice(0, 1 + segmentCount).join('/');
     let mainBundleScript = document.createElement('script');
-    mainBundleScript.src = mainBundlePath + (isDevVesrion ? '' : '/bundle/') + '/main.bundle.js';
+    mainBundleScript.src = mainBundlePath + (isDevVesrion ? '' : '/bundle/') + './main.bundle.js';
 
     document.head.appendChild(mainBundleScript);
   </script>
