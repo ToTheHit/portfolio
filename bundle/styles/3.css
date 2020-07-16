@@ -128,6 +128,9 @@
   transition: opacity 2s linear;
   min-width: 1400px;
 }
+.ThreeDModeling main {
+  background-color: #FFFFFF;
+}
 .ThreeDModeling .content {
   width: 1140px;
   display: flex;

@@ -125,6 +125,9 @@
   overflow-x: hidden;
   transition: opacity 0.5s linear;
 }
+.granit main {
+  background-color: #FFFFFF;
+}
 @font-face {
   font-family: "GothamPro";
   font-weight: 400;

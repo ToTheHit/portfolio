@@ -129,6 +129,9 @@
   letter-spacing: normal;
   transition: opacity 0.5s linear;
 }
+.bodyShop main {
+  background-color: #FFFFFF;
+}
 @font-face {
   font-family: "Lato";
   font-weight: 300;

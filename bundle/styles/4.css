@@ -129,6 +129,9 @@
   letter-spacing: normal;
   transition: opacity 0.5s linear;
 }
+.Advogrand main {
+  background-color: #FFFFFF;
+}
 .Advogrand div,
 button {
   font-family: "ProximaNove", sans-serif;

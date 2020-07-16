@@ -127,14 +127,6 @@
   line-height: normal;
   letter-spacing: normal;
   transition: opacity 0.5s linear;
-  /*  h2 {
-    font-family: "Lato", sans-serif;
-    color: #353738;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-    line-height: normal;
-  }*/
 }
 .Bicycle h1 {
   position: absolute;
@@ -152,6 +144,51 @@
   .Bicycle .title {
     margin-top: 20px !important;
     margin-bottom: 25px !important;
+  }
+}
+.Bicycle-hidden {
+  opacity: 0;
+}
+.Bicycle--AnimateAppearFromBottom {
+  animation: AppearFromBottomAnimation linear 500ms;
+  opacity: 1;
+}
+.Bicycle--AnimateAppearFromRight {
+  animation: AppearFromRightAnimation linear 500ms;
+  opacity: 1;
+}
+.Bicycle--AnimateAppearFromLeft {
+  animation: AppearFromLeftAnimation linear 500ms;
+  opacity: 1;
+}
+@keyframes AppearFromBottomAnimation {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes AppearFromLeftAnimation {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes AppearFromRightAnimation {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
   }
 }
 /* lato-100italic - latin */
