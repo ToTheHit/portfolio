@@ -527,7 +527,10 @@
 }
 .ThreeDModeling-s3_left--buttonContainer input {
   position: absolute;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  opacity: 0;
 }
 .ThreeDModeling-s3_left--buttonContainer:hover {
   cursor: pointer;
