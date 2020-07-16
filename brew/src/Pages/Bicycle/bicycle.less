@@ -19,15 +19,6 @@
     z-index: -1;
   }
 
-/*  h2 {
-    font-family: "Lato", sans-serif;
-    color: #353738;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-    line-height: normal;
-  }*/
-
   .title {
     margin-top: 35px !important;
     text-align: center;
@@ -40,6 +31,52 @@
     }
   }
 
+  &-hidden {
+    opacity: 0;
+  }
+
+  &--AnimateAppearFromBottom {
+    animation: AppearFromBottomAnimation linear 500ms;
+    opacity: 1;
+  }
+  &--AnimateAppearFromRight {
+    animation: AppearFromRightAnimation linear 500ms;
+    opacity: 1;
+  }
+  &--AnimateAppearFromLeft {
+    animation: AppearFromLeftAnimation linear 500ms;
+    opacity: 1;
+  }
+  @keyframes AppearFromBottomAnimation {
+    0%   {
+      transform: translate3d(0, 100%, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes AppearFromLeftAnimation {
+    0%   {
+      transform: translate3d(-100%, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes AppearFromRightAnimation {
+    0%   {
+      transform: translate3d(100%, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
 }
 
 
@@ -175,3 +212,5 @@
   url('../../assets/Bicycle/fonts/Regular/lato-v16-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
   url('../../assets/Bicycle/fonts/Regular/lato-v16-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
 }
+
+

@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import './bicycle_textBlock.less';
 
-const BicycleTextBlock = (props) => {
+const BicycleTextBlock = forwardRef((props, ref) => {
   const {
-    icon, title, text, textStyle,
+    icon, title, text, textStyle, className,
   } = props;
   return (
-    <div className="Bicycle-textBlock">
+    <div className={`Bicycle-textBlock ${className}`} ref={ref}>
       <div
         className="Bicycle-textBlock__icon"
         style={{ backgroundImage: `url(${icon})` }}
@@ -17,7 +17,7 @@ const BicycleTextBlock = (props) => {
       <div className="Bicycle-textBlock__line" />
     </div>
   );
-};
+});
 
 BicycleTextBlock.propTypes = {
   icon: PropTypes.string.isRequired,
@@ -26,12 +26,14 @@ BicycleTextBlock.propTypes = {
   textStyle: PropTypes.shape({
     textAlign: PropTypes.string,
   }),
+  className: PropTypes.string,
 };
 
 BicycleTextBlock.defaultProps = {
   textStyle: {
     textAlign: 'center',
   },
+  className: '',
 };
 
 export default BicycleTextBlock;

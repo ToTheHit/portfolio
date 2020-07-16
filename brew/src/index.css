@@ -19,7 +19,7 @@ code {
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -61,7 +61,12 @@ main {
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  /*transform: translate3d(0,0,-1px);*/
+  /*-webkit-transform: translate3d(0,0,-1px);*/
+
   transform: translateZ(-1px) scale(1.5);
+  -webkit-transform: translateZ(-1px) scale(1.5);
+
   /* Force the background image to fill the whole element. */
   /*background-size: 100%;*/
   /* Keep the image from overlapping sibling elements. */
@@ -81,6 +86,7 @@ main {
   overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 2px;
+  -webkit-perspective: 2px;
   margin-left: -2px;
 }
 

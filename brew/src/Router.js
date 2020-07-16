@@ -88,13 +88,6 @@ class AppRouter extends Component {
               </Route>
             ))}
 
-            {/*            <Route path={'/404'}>
-              <div>404</div>
-            </Route>
-            <Route>
-              <Redirect to="/404" />
-            </Route>*/}
-
             <Route component={Page404} />
           </Switch>
         </Suspense>
