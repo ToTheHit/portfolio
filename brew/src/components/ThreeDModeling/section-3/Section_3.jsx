@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './section_3.less';
+import './section_3.css';
 import ThreeDModelingTitle from '../general/ThreeDModeling_title';
 import background from '../../../assets/ThreeDModeling/section-3/background.jpg';
 import classNames from '../../../lib/classNames';

@@ -1,0 +1,212 @@
+.ThreeDModeling-s3 {
+  background-size: cover;
+  width: 100%;
+  height: 622px;
+}
+.ThreeDModeling-s3 .ThreeDModeling_title {
+  color: #FFFFFF;
+}
+.ThreeDModeling-s3 .ThreeDModeling_title--first::after {
+  border-bottom-color: #FFFFFF;
+}
+.ThreeDModeling-s3 .content {
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ThreeDModeling-s3_left {
+  display: flex;
+  flex-direction: column;
+}
+.ThreeDModeling-s3_left__content {
+  padding: 22px;
+}
+.ThreeDModeling-s3_left--blockTitle {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.ThreeDModeling-s3_left--square {
+  width: 652px;
+  min-height: 128px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+.ThreeDModeling-s3_left--slider {
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 9px;
+  border: none;
+  opacity: 0.9999;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 254, 0.5);
+}
+.ThreeDModeling-s3_left--slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 7px solid #19b5fe;
+  background: #ffffff;
+}
+.ThreeDModeling-s3_left--sliderDots {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.ThreeDModeling-s3_left--sliderDots div {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 2px;
+}
+.ThreeDModeling-s3_left--sliderDots div:nth-child(2) {
+  left: 30%;
+}
+.ThreeDModeling-s3_left--sliderDots div:nth-child(3) {
+  left: 60%;
+}
+.ThreeDModeling-s3_left--sliderDots div:nth-child(4) {
+  left: 97%;
+}
+.ThreeDModeling-s3_left--sliderLandmarks {
+  display: flex;
+  justify-content: space-between;
+}
+.ThreeDModeling-s3_left--sliderLandmarks p {
+  color: #FFFFFF;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 10px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+}
+.ThreeDModeling-s3_left--package {
+  width: 652px;
+  height: 128px;
+  margin-top: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+.ThreeDModeling-s3_left--buttonsBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.ThreeDModeling-s3_left--buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 193px;
+  height: 45px;
+  border: solid 1px #ffffff;
+  color: #FFFFFF;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 5px;
+  transition: background-color 0.2s linear;
+  background-color: transparent;
+}
+.ThreeDModeling-s3_left--buttonContainer input {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  opacity: 0;
+}
+.ThreeDModeling-s3_left--buttonContainer:hover {
+  cursor: pointer;
+}
+.ThreeDModeling-s3_left--buttonContainer-checked {
+  background-color: #19b5fe;
+}
+.ThreeDModeling-s3_left--buttonContainer__description {
+  position: absolute;
+  width: 443px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.23);
+  background-color: #FFFFFF;
+  top: 60px;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #464646;
+  cursor: default;
+}
+.ThreeDModeling-s3_left--buttonContainer__description::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: calc(50% - 25px);
+  top: -25px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid white;
+}
+.ThreeDModeling-s3_left--buttonContainer__description-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.ThreeDModeling-s3_right {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 310px;
+}
+.ThreeDModeling-s3_right--result {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ThreeDModeling-s3_right--result:nth-child(2) {
+  margin: 25px 0;
+}
+.ThreeDModeling-s3_right--resultName {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+.ThreeDModeling-s3_right--resultValue {
+  font-size: 32px;
+  line-height: 1;
+}
+.ThreeDModeling-s3_right--button {
+  margin-top: 34px;
+  width: 309px;
+  height: 51px;
+  background-color: #19b5fe;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 14px;
+}
+.ThreeDModeling-s3_right--button:hover {
+  cursor: pointer;
+}
+.ThreeDModeling-s3_right--callback {
+  margin: 22px auto 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: center;
+}
+.ThreeDModeling-s3_right--phone {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
